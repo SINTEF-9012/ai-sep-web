@@ -10,57 +10,57 @@
       <p>Graph Data Science is a science-driven approach to gain knowledge from the relationships and structures in data,
         typically to power predictions. It covers methods, techniques, algorithms and tools that help data scientists
         answer questions and explain outcomes using graph data.</p>
-  
+
       <h3>How are graphs used in data science?</h3>
-  
+
       <p>A graph is an abstract data type that requires two basic building blocks: nodes and vertices. A graph utilises
         the basic idea of using vertices to establish relationships between pairs of nodes. In terms of applications, many
         real world relationships are best modeled using graph structures.</p>
-  
+
       In this section we will cover two popular graph models, namely RDF graphs and property graphs.
-  
+
       <h3>RDF graph</h3>
-  
+
       <p>An RDF graph is data structured according to the <a
           href="https://www.w3.org/TR/rdf11-primer/#section-triple" target="_blank" rel="noopener noreferrer">Resource Description Framework (RDF) data model.</a>
         A semantic triple, or RDF triple or simply triple, is the atomic data entity in the RDF data model. As its name
         indicates, a triple is a set of three entities that codifies a statement about semantic data in the form of
         subject–predicate–object expressions (e.g., "Bob is 35", or "Bob knows John").</p>
-  
+
       <p>The <a href="http://www.linkeddatatools.com/introducing-rdf" target="_blank" rel="noopener noreferrer">LinkedDataTools RDF tutorial</a> gives further
         details and examples of RDF graphs. See <a
           href="https://db-engines.com/en/ranking/rdf+store" target="_blank" rel="noopener noreferrer">https://db-engines.com/en/ranking/rdf+store</a> for a list of
         databases that support RDF.</p>
-  
+
       <h4>Example</h4>
-  
+
       <img src="assets/img/rdf_graph_example.png">
-  
+
       <h3>Property graph</h3>
-  
+
       <p>A property graph or labeled property graph (LPG) are much simpler than RDF. They consist of a set of nodes and a
         set of edges, with each node and edge being essentially a struct, or a simple data structure, consisting of keys
         and values. JSON is a standard way of encoding these structs. Each node and edge is a JSON document, with edges
         having special keys with values pointing to a node. Nodes can be labelled to be grouped.</p>
-  
+
       <p>According to <a
           href="https://db-engines.com/en/ranking/graph+dbms" target="_blank" rel="noopener noreferrer">https://db-engines.com/en/ranking/graph+dbms</a>, Neo4j
         ranks as the most popular graph database.
       <p>For further details on property graphs and examples please consult the <a
           href="https://neo4j.com/docs/getting-started/current/graphdb-concepts/" target="_blank" rel="noopener noreferrer">Neo4j graph database concepts</a>.</p>
-  
+
       <h4>Example</h4>
-  
+
       <img src="assets/img/lpg_graph_example.png">
-  
+
       <h3>Research challenges and opportunities</h3>
-  
+
       <p>The paper <a href="http://www.semantic-web-journal.net/content/role-knowledge-graphs-explainable-ai-0" target="_blank" rel="noopener noreferrer">"On The
           Role of Knowledge Graphs in Explainable AI"</a> by F. Leccue reviews explainable AI (XAI) and presents
         limitations and opportunities for Knowledge Graphs and their underlying technologies within different fields of
         AI. Below we present the identified opportunites described in the paper
         for each of these fields:</p>
-  
+
       <ul>
         <li><b>Machine Learning (ML):</b> "Knowledge Graphs do encode con-texts, do expose connections and relations, and
           support inference and causation natively. Existing XAI approaches in ML consider a flat representation of data,
@@ -104,9 +104,9 @@
           text classification. Similar representations, inspired from Knowledge Graphs could provide the semantic
           layer missing from brute-force machine learning approaches ontext, aiming at exposing explanation."</li>
       </ul>
-  
+
       <h3>Available toolkits</h3>
-  
+
       <table border="1">
         <tr>
           <th style="text-align:left">Tool</th>
@@ -160,6 +160,19 @@
           <td><a href="http://tinkerpop.apache.org/" target="_blank" rel="noopener noreferrer">Apache TinkerPop</a></td>
           <td>Apache TinkerPop is a graph computing framework for both graph databases (OLTP) and graph analytic systems
             (OLAP).</td>
+          <td>Property graph</td>
+          <td>
+            <ul>
+              <li>Java</li>
+            </ul>
+          </td>
+          <td></td>
+          <td>Apache License 2.0</td>
+          <td>2021</td>
+        </tr>
+        <tr>
+          <td><a href="https://giraph.apache.org/" target="_blank" rel="noopener noreferrer">Apache Giraph</a></td>
+          <td>Apache Giraph is an iterative graph processing system built for high scalability.</td>
           <td>Property graph</td>
           <td>
             <ul>
@@ -271,7 +284,7 @@
           <td>2021</td>
         </tr>
       </table>
-  
+
     </td>
   </table>
 

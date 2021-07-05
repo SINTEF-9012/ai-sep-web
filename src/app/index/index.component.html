@@ -146,12 +146,12 @@
                   <div class="listitem">
                     <b>{{definitions.method.title}}: </b>{{definitions.method.definition}}
                   </div>
-                  <div class="listitem">
+                  <!-- <div class="listitem">
                     <b>{{definitions.localOrGlobal.title}}: </b>{{definitions.localOrGlobal.definition}}
                   </div>
                   <div>
                     <b>{{definitions.modelSpecificOrAgnostic.title}}: </b>{{definitions.modelSpecificOrAgnostic.definition}}
-                  </div>
+                  </div> -->
                 </div>
               </div>
             </div>
@@ -185,7 +185,7 @@
                 <clr-dg-column>Category</clr-dg-column>
                 <clr-dg-column>Local or Global</clr-dg-column>
                 <clr-dg-column>Model Specific or Agnostic</clr-dg-column>
-              
+
                 <clr-dg-row *clrDgItems="let res of selfdescription" [clrDgItem]="res">
                   <clr-dg-cell>{{res.resource}}</clr-dg-cell>
                   <clr-dg-cell>{{getResourceType(res.resourceType)}}</clr-dg-cell>
