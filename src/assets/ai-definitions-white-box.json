@@ -1,0 +1,14 @@
+{
+            "method": {
+                "title": "White Box",
+                "definition": "This category encompasses methods that create interpretable and easily understandable from humans models. The models in this category are often called intrinsic, transparent, or white-box models. Such models include the linear, decision tree, and rule-based models and some other more complex and sophisticated models that are equally transparent and, therefore, promising for the interpretability field."
+                },
+            "localOrGlobal": {
+                "title": "Local vs Global",
+                "definition": "If the method provides an explanation only for a specific instance, then it is a local one and, if the method explains the whole model, then it is global."
+                },
+            "modelSpecificOrAgnostic": {
+                "title": "Model Specific vs Agnostic",
+                "definition": "A model specific method can be applied to a single model or a group of specific models. On the other hand, a model agnostic method can be applied to any model."
+                }
+}

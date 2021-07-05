@@ -1,0 +1,582 @@
+[
+    {
+        "resource": "SHAP",
+        "id": 1,
+        "citationsPerYear": 505,
+        "year": 2017,
+        "description": "Text",
+        "paperTitle": "A Unified Approach to Interpreting Model Predictions",
+        "paperAbstract": "Understanding why a model makes a certain prediction can be as crucial as the prediction's accuracy in many applications. However, the highest accuracy for large modern datasets is often achieved by complex models that even experts struggle to interpret, such as ensemble or deep learning models, creating a tension between accuracy and interpretability. In response, various methods have recently been proposed to help users interpret the predictions of complex models, but it is often unclear how these methods are related and when one method is preferable over another. To address this problem, we present a unified framework for interpreting predictions, SHAP (SHapley Additive exPlanations). SHAP assigns each feature an importance value for a particular prediction. Its novel components include: (1) the identification of a new class of additive feature importance measures, and (2) theoretical results showing there is a unique solution in this class with a set of desirable properties.",
+        "reference": "Zeiler, M.D.; Fergus, R. Visualizing and understanding convolutional networks. In European Conference on Computer Vision; Springer: Berlin/Heidelberg, Germany, 2014; pp. 818–833",
+        "resourceType": {
+            "paper": false,
+            "tool": true,
+            "method": false
+        },
+        "sourceURL": "https://arxiv.org/abs/1705.07874",
+        "repositoryUrl": "https://github.com/slundberg/shap",
+        "localOrGlobal": {
+            "local": true,
+            "global": true
+        },
+        "dataTypes": {
+            "tabular": true,
+            "text": true,
+            "image": true,
+            "graph": false
+        },
+        "purposeOfInterpretability": {
+            "intrinsic": false,
+            "postHoc": true,
+            "enhanceFairness": false,
+            "testSensitivityOfPredictions": false
+        },
+        "modelSpecificOrAgnostic": {
+            "specific": false,
+            "agnostic": true,
+            "enhanceFairness": false,
+            "testSensitivityOfPredictions": false
+        }
+    },
+    {
+        "resource": "DeepExplain iNNvestigate tf-explain",
+        "id": 1,
+        "citationsPerYear": 1548,
+        "year": 2014,
+        "description": "Text",
+        "paperTitle": "Visualizing and Understanding Convolutional Networks",
+        "paperAbstract": "Large Convolutional Network models have recently demonstrated impressive classification performance on the ImageNet benchmark. However there is no clear understanding of why they perform so well, or how they might be improved. In this paper we address both issues. We introduce a novel visualization technique that gives insight into the function of intermediate feature layers and the operation of the classifier. We also perform an ablation study to discover the performance contribution from different model layers.",
+        "reference": "Zeiler, M.D.; Fergus, R. Visualizing and understanding convolutional networks. In European Conference on Computer Vision; Springer: Berlin/Heidelberg, Germany, 2014; pp. 818–833",
+        "resourceType": {
+            "paper": false,
+            "tool": true,
+            "method": false
+        },
+        "sourceURL": "https://arxiv.org/abs/1311.2901",
+        "repositoryUrl": "https://github.com/marcoancona/DeepExplain",
+        "localOrGlobal": {
+            "local": true,
+            "global": false
+        },
+        "dataTypes": {
+            "tabular": false,
+            "text": false,
+            "image": true,
+            "graph": false
+        },
+        "purposeOfInterpretability": {
+            "intrinsic": false,
+            "postHoc": true,
+            "enhanceFairness": false,
+            "testSensitivityOfPredictions": false
+        },
+        "modelSpecificOrAgnostic": {
+            "specific": true,
+            "agnostic": false,
+            "enhanceFairness": false,
+            "testSensitivityOfPredictions": false
+        }
+    },
+    {
+        "resource": "Grad-CAM tf-explain",
+        "id": 2,
+        "citationsPerYear": 798,
+        "year": 2017,
+        "description": "Text",
+        "paperTitle": "Grad-CAM: Visual Explanations from Deep Networks via Gradient-based Localization",
+        "paperAbstract": "We propose a technique for producing visual explanations for decisions from a large class of CNN-based models, making them more transparent. Our approach - Gradient-weighted Class Activation Mapping (Grad-CAM), uses the gradients of any target concept, flowing into the final convolutional layer to produce a coarse localization map highlighting important regions in the image for predicting the concept. Grad-CAM is applicable to a wide variety of CNN model-families: (1) CNNs with fully-connected layers, (2) CNNs used for structured outputs, (3) CNNs used in tasks with multimodal inputs or reinforcement learning, without any architectural changes or re-training.",
+        "reference": "Selvaraju, R.R.; Cogswell, M.; Das, A.; Vedantam, R.; Parikh, D.; Batra, D. Grad-cam: Visual explanations from deep networks via gradient-based localization. In Proceedings of the IEEE International Conference on Computer Vision, Venice, Italy, 22–29 October 2017; pp. 618–626.",
+        "resourceType": {
+            "paper": false,
+            "tool": true,
+            "method": false
+        },
+        "sourceURL": "https://arxiv.org/abs/1610.02391",
+        "repositoryUrl": "https://github.com/ramprs/grad-cam",
+        "localOrGlobal": {
+            "local": true,
+            "global": false
+        },
+        "dataTypes": {
+            "tabular": false,
+            "text": false,
+            "image": true,
+            "graph": false
+        },
+        "purposeOfInterpretability": {
+            "intrinsic": false,
+            "postHoc": true,
+            "enhanceFairness": false,
+            "testSensitivityOfPredictions": false
+        },
+        "modelSpecificOrAgnostic": {
+            "specific": true,
+            "agnostic": false,
+            "enhanceFairness": false,
+            "testSensitivityOfPredictions": false
+        }
+    },
+    {
+        "resource": "CAM",
+        "id": 3,
+        "citationsPerYear": 608,
+        "year": 2016,
+        "description": "Text",
+        "paperTitle": "Learning Deep Features for Discriminative Localization",
+        "paperAbstract": "In this work, we revisit the global average pooling layer proposed in [13], and shed light on how it explicitly enables the convolutional neural network to have remarkable localization ability despite being trained on image-level labels. While this technique was previously proposed as a means for regularizing training, we find that it actually builds a generic localizable deep representation that can be applied to a variety of tasks. Despite the apparent simplicity of global average pooling, we are able to achieve 37.1% top-5 error for object localization on ILSVRC 2014, which is remarkably close to the 34.2% top-5 error achieved by a fully supervised CNN approach. We demonstrate that our network is able to localize the discriminative image regions on a variety of tasks despite not being trained for them",
+        "reference": "Zhou, B.; Khosla, A.; Lapedriza, A.; Oliva, A.; Torralba, A. Learning deep features for discriminative localization. In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, Las Vegas, NV, USA, 27–30 June 2016; pp. 2921–2929.",
+        "resourceType": {
+            "paper": false,
+            "tool": true,
+            "method": false
+        },
+        "sourceURL": "https://arxiv.org/abs/1512.04150",
+        "repositoryUrl": "https://github.com/zhoubolei/CAM",
+        "localOrGlobal": {
+            "local": true,
+            "global": false
+        },
+        "dataTypes": {
+            "tabular": false,
+            "text": false,
+            "image": true,
+            "graph": false
+        },
+        "purposeOfInterpretability": {
+            "intrinsic": false,
+            "postHoc": true,
+            "enhanceFairness": false,
+            "testSensitivityOfPredictions": false
+        },
+        "modelSpecificOrAgnostic": {
+            "specific": true,
+            "agnostic": false,
+            "enhanceFairness": false,
+            "testSensitivityOfPredictions": false
+        }
+    },
+    {
+        "resource": "iNNvestigate",
+        "id": 4,
+        "citationsPerYear": 365,
+        "year": 2014,
+        "description": "Text",
+        "paperTitle": "Striving for Simplicity: The All Convolutional Net",
+        "paperAbstract": "Most modern convolutional neural networks (CNNs) used for object recognition are built using the same principles: Alternating convolution and max-pooling layers followed by a small number of fully connected layers. We re-evaluate the state of the art for object recognition from small images with convolutional networks, questioning the necessity of different components in the pipeline. We find that max-pooling can simply be replaced by a convolutional layer with increased stride without loss in accuracy on several image recognition benchmarks. Following this finding -- and building on other recent work for finding simple network structures -- we propose a new architecture that consists solely of convolutional layers and yields competitive or state of the art performance on several object recognition datasets (CIFAR-10, CIFAR-100, ImageNet). To analyze the network we introduce a new variant of the deconvolution approach for visualizing features learned by CNNs, which can be applied to a broader range of network structures than existing approaches.",
+        "reference": "Springenberg, J.; Dosovitskiy, A.; Brox, T.; Riedmiller, M. Striving for Simplicity: The All Convolutional Net. In Proceedings of the ICLR (Workshop Track), San Diego, CA, USA, 7–9 May 2015.",
+        "resourceType": {
+            "paper": false,
+            "tool": true,
+            "method": false
+        },
+        "sourceURL": "https://arxiv.org/abs/1412.6806",
+        "repositoryUrl": "https://github.com/albermax/innvestigate",
+        "localOrGlobal": {
+            "local": true,
+            "global": false
+        },
+        "dataTypes": {
+            "tabular": false,
+            "text": false,
+            "image": true,
+            "graph": false
+        },
+        "purposeOfInterpretability": {
+            "intrinsic": false,
+            "postHoc": true,
+            "enhanceFairness": false,
+            "testSensitivityOfPredictions": false
+        },
+        "modelSpecificOrAgnostic": {
+            "specific": true,
+            "agnostic": false,
+            "enhanceFairness": false,
+            "testSensitivityOfPredictions": false
+        }
+    },
+    {
+        "resource": "DeepExplain iNNvestigate Integrated Gradients",
+        "id": 5,
+        "citationsPerYear": 247,
+        "year": 2017,
+        "description": "Text",
+        "paperTitle": "Axiomatic Attribution for Deep Networks",
+        "paperAbstract": "We study the problem of attributing the prediction of a deep network to its input features, a problem previously studied by several other works. We identify two fundamental axioms---Sensitivity and Implementation Invariance that attribution methods ought to satisfy. We show that they are not satisfied by most known attribution methods, which we consider to be a fundamental weakness of those methods. We use the axioms to guide the design of a new attribution method called Integrated Gradients. Our method requires no modification to the original network and is extremely simple to implement; it just needs a few calls to the standard gradient operator. We apply this method to a couple of image models, a couple of text models and a chemistry model, demonstrating its ability to debug networks, to extract rules from a network, and to enable users to engage with models better.",
+        "reference": "Sundararajan, M.; Taly, A.; Yan, Q. Axiomatic attribution for deep networks. In Proceedings of the 34th International Conference on Machine Learning, Sydney, Australia, 6–11 August 2017; Volume 70, pp. 3319–3328.",
+        "resourceType": {
+            "paper": false,
+            "tool": true,
+            "method": false
+        },
+        "sourceURL": "https://arxiv.org/abs/1703.01365",
+        "repositoryUrl": "https://github.com/marcoancona/DeepExplain",
+        "localOrGlobal": {
+            "local": true,
+            "global": false
+        },
+        "dataTypes": {
+            "tabular": true,
+            "text": true,
+            "image": true,
+            "graph": false
+        },
+        "purposeOfInterpretability": {
+            "intrinsic": false,
+            "postHoc": true,
+            "enhanceFairness": false,
+            "testSensitivityOfPredictions": false
+        },
+        "modelSpecificOrAgnostic": {
+            "specific": true,
+            "agnostic": false,
+            "enhanceFairness": false,
+            "testSensitivityOfPredictions": false
+        }
+    },
+    {
+        "resource": "Deep Visualization Toolbox",
+        "id": 6,
+        "citationsPerYear": 228,
+        "year": 2015,
+        "description": "Text",
+        "paperTitle": "Understanding Neural Networks Through Deep Visualization",
+        "paperAbstract": "Recent years have produced great advances in training large, deep neural networks (DNNs), including notable successes in training convolutional neural networks (convnets) to recognize natural images. However, our understanding of how these models work, especially what computations they perform at intermediate layers, has lagged behind. Progress in the field will be further accelerated by the development of better tools for visualizing and interpreting neural nets. We introduce two such tools here. The first is a tool that visualizes the activations produced on each layer of a trained convnet as it processes an image or video (e.g. a live webcam stream). We have found that looking at live activations that change in response to user input helps build valuable intuitions about how convnets work. The second tool enables visualizing features at each layer of a DNN via regularized optimization in image space.",
+        "reference": "Yosinski, J.; Clune, J.; Fuchs, T.; Lipson, H. Understanding neural networks through deep visualization. In Proceedings of the 32nd International Conference on Machine Learning, Lille, France, 6–11 July 2015.",
+        "resourceType": {
+            "paper": false,
+            "tool": true,
+            "method": false
+        },
+        "sourceURL": "https://arxiv.org/abs/1506.06579",
+        "repositoryUrl": "https://github.com/yosinski/deep-visualization-toolbox",
+        "localOrGlobal": {
+            "local": true,
+            "global": false
+        },
+        "dataTypes": {
+            "tabular": false,
+            "text": false,
+            "image": true,
+            "graph": false
+        },
+        "purposeOfInterpretability": {
+            "intrinsic": false,
+            "postHoc": true,
+            "enhanceFairness": false,
+            "testSensitivityOfPredictions": false
+        },
+        "modelSpecificOrAgnostic": {
+            "specific": true,
+            "agnostic": false,
+            "enhanceFairness": false,
+            "testSensitivityOfPredictions": false
+        }
+    },
+    {
+        "resource": "DeepExplain iNNvestigate The LRP Toolbox Skater",
+        "id": 7,
+        "citationsPerYear": 218,
+        "year": 2015,
+        "description": "Text",
+        "paperTitle": "On Pixel-Wise Explanations for Non-Linear Classifier Decisions by Layer-Wise Relevance Propagation",
+        "paperAbstract": "Understanding and interpreting classification decisions of automated image classification systems is of high value in many applications, as it allows to verify the reasoning of the system and provides additional information to the human expert. Although machine learning methods are solving very successfully a plethora of tasks, they have in most cases the disadvantage of acting as a black box, not providing any information about what made them arrive at a particular decision. This work proposes a general solution to the problem of understanding classification decisions by pixel-wise decomposition of nonlinear classifiers. We introduce a methodology that allows to visualize the contributions of single pixels to predictions for kernel-based classifiers over Bag of Words features and for multilayered neural networks.",
+        "reference": "Bach, S.; Binder, A.; Montavon, G.; Klauschen, F.; Müller, K.R.; Samek,W. On pixel-wise explanations for non-linear classifier decisions by layer-wise relevance propagation. PLoS ONE 2015, 10, e0130140.",
+        "resourceType": {
+            "paper": false,
+            "tool": true,
+            "method": false
+        },
+        "sourceURL": "https://doi.org/10.1371/journal.pone.0130140",
+        "repositoryUrl": "https://github.com/sebastian-lapuschkin/lrp_toolbox",
+        "localOrGlobal": {
+            "local": true,
+            "global": false
+        },
+        "dataTypes": {
+            "tabular": false,
+            "text": true,
+            "image": true,
+            "graph": false
+        },
+        "purposeOfInterpretability": {
+            "intrinsic": false,
+            "postHoc": true,
+            "enhanceFairness": false,
+            "testSensitivityOfPredictions": false
+        },
+        "modelSpecificOrAgnostic": {
+            "specific": true,
+            "agnostic": false,
+            "enhanceFairness": false,
+            "testSensitivityOfPredictions": false
+        }
+    },
+    {
+        "resource": "DeepExplain DeepLift iNNvestigate tf-explain Skater",
+        "id": 7,
+        "citationsPerYear": 212,
+        "year": 2017,
+        "description": "Text",
+        "paperTitle": "Learning Important Features Through Propagating Activation Differences",
+        "paperAbstract": "The purported black box nature of neural networks is a barrier to adoption in applications where interpretability is essential. Here we present DeepLIFT (Deep Learning Important FeaTures), a method for decomposing the output prediction of a neural network on a specific input by backpropagating the contributions of all neurons in the network to every feature of the input. DeepLIFT compares the activation of each neuron to its 'reference activation' and assigns contribution scores according to the difference. By optionally giving separate consideration to positive and negative contributions, DeepLIFT can also reveal dependencies which are missed by other approaches. Scores can be computed efficiently in a single backward pass. We apply DeepLIFT to models trained on MNIST and simulated genomic data, and show significant advantages over gradient-based methods. ",
+        "resourceType": {
+            "paper": false,
+            "tool": true,
+            "method": false
+        },
+        "sourceURL": "https://arxiv.org/abs/1704.02685",
+        "repositoryUrl": "https://github.com/kundajelab/deeplift",
+        "localOrGlobal": {
+            "local": true,
+            "global": false
+        },
+        "dataTypes": {
+            "tabular": false,
+            "text": true,
+            "image": true,
+            "graph": false
+        },
+        "purposeOfInterpretability": {
+            "intrinsic": false,
+            "postHoc": true,
+            "enhanceFairness": false,
+            "testSensitivityOfPredictions": false
+        },
+        "modelSpecificOrAgnostic": {
+            "specific": true,
+            "agnostic": false,
+            "enhanceFairness": false,
+            "testSensitivityOfPredictions": false
+        }
+    },
+    {
+        "resource": "iNNvestigate",
+        "id": 7,
+        "citationsPerYear": 132,
+        "year": 2017,
+        "description": "Text",
+        "paperTitle": "Explaining NonLinear Classification Decisions with Deep Taylor Decomposition",
+        "paperAbstract": "In this paper we introduce a novel methodology for interpreting generic multilayer neural networks by decomposing the network's classification decision into contributions of it's input elements. Although our focus is on image classification, the method is applicable to any type of input data, learning task and network architecture. Our method is based on deep Taylor decomposition and efficiently utilizes the structure of the network by backpropagating the explanations from the output to the input layer.",
+        "resourceType": {
+            "paper": false,
+            "tool": true,
+            "method": false
+        },
+        "sourceURL": "https://www.sciencedirect.com/science/article/pii/S0031320316303582",
+        "repositoryUrl": "https://github.com/albermax/innvestigate",
+        "localOrGlobal": {
+            "local": true,
+            "global": false
+        },
+        "dataTypes": {
+            "tabular": false,
+            "text": false,
+            "image": true,
+            "graph": false
+        },
+        "purposeOfInterpretability": {
+            "intrinsic": false,
+            "postHoc": true,
+            "enhanceFairness": false,
+            "testSensitivityOfPredictions": false
+        },
+        "modelSpecificOrAgnostic": {
+            "specific": true,
+            "agnostic": false,
+            "enhanceFairness": false,
+            "testSensitivityOfPredictions": false
+        }
+    },
+    {
+        "resource": "iNNvestigate tf-explain",
+        "id": 7,
+        "citationsPerYear": 113,
+        "year": 2017,
+        "description": "Text",
+        "paperTitle": "SmoothGrad: removing noise by adding noise",
+        "paperAbstract": "Explaining the output of a deep network remains a challenge. In the case of an image classifier, one type of explanation is to identify pixels that strongly influence the final decision. A starting point for this strategy is the gradient of the class score function with respect to the input image. This gradient can be interpreted as a sensitivity map, and there are several techniques that elaborate on this basic idea. This paper makes two contributions: it introduces SmoothGrad, a simple method that can help visually sharpen gradient-based sensitivity maps, and it discusses lessons in the visualization of these maps. We publish the code for our experiments and a website with our results.",
+        "resourceType": {
+            "paper": false,
+            "tool": true,
+            "method": false
+        },
+        "sourceURL": "https://arxiv.org/abs/1706.03825",
+        "repositoryUrl": "https://github.com/sicara/tf-explain",
+        "localOrGlobal": {
+            "local": true,
+            "global": false
+        },
+        "dataTypes": {
+            "tabular": false,
+            "text": false,
+            "image": true,
+            "graph": false
+        },
+        "purposeOfInterpretability": {
+            "intrinsic": false,
+            "postHoc": true,
+            "enhanceFairness": false,
+            "testSensitivityOfPredictions": false
+        },
+        "modelSpecificOrAgnostic": {
+            "specific": true,
+            "agnostic": false,
+            "enhanceFairness": false,
+            "testSensitivityOfPredictions": false
+        }
+    },
+    {
+        "resource": "tcav",
+        "id": 7,
+        "citationsPerYear": 95,
+        "year": 2018,
+        "description": "Text",
+        "paperTitle": "Interpretability Beyond Feature Attribution: Quantitative Testing with Concept Activation Vectors (TCAV)",
+        "paperAbstract": "The interpretation of deep learning models is a challenge due to their size, complexity, and often opaque internal state. In addition, many systems, such as image classifiers, operate on low-level features rather than high-level concepts. To address these challenges, we introduce Concept Activation Vectors (CAVs), which provide an interpretation of a neural net's internal state in terms of human-friendly concepts. The key idea is to view the high-dimensional internal state of a neural net as an aid, not an obstacle. We show how to use CAVs as part of a technique, Testing with CAVs (TCAV), that uses directional derivatives to quantify the degree to which a user-defined concept is important to a classification result--for example, how sensitive a prediction of zebra is to the presence of stripes. Using the domain of image classification as a testing ground, we describe how CAVs may be used to explore hypotheses and generate insights for a standard image classification network as well as a medical application.",
+        "resourceType": {
+            "paper": false,
+            "tool": true,
+            "method": false
+        },
+        "sourceURL": "https://arxiv.org/abs/1711.11279",
+        "repositoryUrl": "https://github.com/tensorflow/tcav",
+        "localOrGlobal": {
+            "local": true,
+            "global": false
+        },
+        "dataTypes": {
+            "tabular": false,
+            "text": false,
+            "image": true,
+            "graph": false
+        },
+        "purposeOfInterpretability": {
+            "intrinsic": false,
+            "postHoc": true,
+            "enhanceFairness": false,
+            "testSensitivityOfPredictions": false
+        },
+        "modelSpecificOrAgnostic": {
+            "specific": true,
+            "agnostic": false,
+            "enhanceFairness": false,
+            "testSensitivityOfPredictions": false
+        }
+    },
+    {
+        "resource": "rationale",
+        "id": 7,
+        "citationsPerYear": 81,
+        "year": 2016,
+        "description": "Text",
+        "paperTitle": "Rationalizing Neural Predictions",
+        "paperAbstract": "Prediction without justification has limited applicability. As a remedy, we learn to extract pieces of input text as justifications -- rationales -- that are tailored to be short and coherent, yet sufficient for making the same prediction. Our approach combines two modular components, generator and encoder, which are trained to operate well together. The generator specifies a distribution over text fragments as candidate rationales and these are passed through the encoder for prediction. Rationales are never given during training. Instead, the model is regularized by desiderata for rationales. We evaluate the approach on multi-aspect sentiment analysis against manually annotated test cases. Our approach outperforms attention-based baseline by a significant margin. We also successfully illustrate the method on the question retrieval task.",
+        "reference": "Bach, S.; Binder, A.; Montavon, G.; Klauschen, F.; Müller, K.R.; Samek,W. On pixel-wise explanations for non-linear classifier decisions by layer-wise relevance propagation. PLoS ONE 2015, 10, e0130140.",
+        "resourceType": {
+            "paper": false,
+            "tool": true,
+            "method": false
+        },
+        "sourceURL": "https://arxiv.org/abs/1606.04155",
+        "repositoryUrl": "https://github.com/taolei87/rcnn/tree/master/code/rationale",
+        "localOrGlobal": {
+            "local": true,
+            "global": false
+        },
+        "dataTypes": {
+            "tabular": false,
+            "text": true,
+            "image": false,
+            "graph": false
+        },
+        "purposeOfInterpretability": {
+            "intrinsic": false,
+            "postHoc": true,
+            "enhanceFairness": false,
+            "testSensitivityOfPredictions": false
+        },
+        "modelSpecificOrAgnostic": {
+            "specific": true,
+            "agnostic": false,
+            "enhanceFairness": false,
+            "testSensitivityOfPredictions": false
+        }
+    },
+    {
+        "resource": "Grad-CAM++",
+        "id": 7,
+        "citationsPerYear": 81,
+        "year": 2018,
+        "description": "Text",
+        "paperTitle": "Grad-CAM++: Improved Visual Explanations for Deep Convolutional Networks",
+        "paperAbstract": "Building on a recently proposed method called Grad-CAM, we propose a generalized method called Grad-CAM++ that can provide better visual explanations of CNN model predictions, in terms of better object localization as well as explaining occurrences of multiple object instances in a single image, when compared to state-of-the-art. We provide a mathematical derivation for the proposed method, which uses a weighted combination of the positive partial derivatives of the last convolutional layer feature maps with respect to a specific class score as weights to generate a visual explanation for the corresponding class label. Our extensive experiments and evaluations, both subjective and objective, on standard datasets showed that Grad-CAM++ provides promising human-interpretable visual explanations for a given CNN architecture across multiple tasks including classification, image caption generation and 3D action recognition; as well as in new settings such as knowledge distillation.",
+        "resourceType": {
+            "paper": false,
+            "tool": true,
+            "method": false
+        },
+        "sourceURL": "https://arxiv.org/abs/1710.11063",
+        "repositoryUrl": "https://github.com/adityac94/Grad_CAM_plus_plus",
+        "localOrGlobal": {
+            "local": true,
+            "global": false
+        },
+        "dataTypes": {
+            "tabular": false,
+            "text": false,
+            "image": true,
+            "graph": false
+        },
+        "purposeOfInterpretability": {
+            "intrinsic": false,
+            "postHoc": true,
+            "enhanceFairness": false,
+            "testSensitivityOfPredictions": false
+        },
+        "modelSpecificOrAgnostic": {
+            "specific": true,
+            "agnostic": false,
+            "enhanceFairness": false,
+            "testSensitivityOfPredictions": false
+        }
+    },
+    {
+        "resource": "RISE",
+        "id": 7,
+        "citationsPerYear": 43,
+        "year": 2018,
+        "description": "Text",
+        "paperTitle": "RISE: Randomized Input Sampling for Explanation of Black-box Models",
+        "paperAbstract": "Deep neural networks are being used increasingly to automate data analysis and decision making, yet their decision-making process is largely unclear and is difficult to explain to the end users. In this paper, we address the problem of Explainable AI for deep neural networks that take images as input and output a class probability. We propose an approach called RISE that generates an importance map indicating how salient each pixel is for the model's prediction. In contrast to white-box approaches that estimate pixel importance using gradients or other internal network state, RISE works on black-box models. It estimates importance empirically by probing the model with randomly masked versions of the input image and obtaining the corresponding outputs. ",
+        "reference": "Bach, S.; Binder, A.; Montavon, G.; Klauschen, F.; Müller, K.R.; Samek,W. On pixel-wise explanations for non-linear classifier decisions by layer-wise relevance propagation. PLoS ONE 2015, 10, e0130140.",
+        "resourceType": {
+            "paper": false,
+            "tool": true,
+            "method": false
+        },
+        "sourceURL": "https://arxiv.org/abs/1806.07421",
+        "repositoryUrl": "https://github.com/eclique/RISE",
+        "localOrGlobal": {
+            "local": true,
+            "global": false
+        },
+        "dataTypes": {
+            "tabular": false,
+            "text": false,
+            "image": true,
+            "graph": false
+        },
+        "purposeOfInterpretability": {
+            "intrinsic": false,
+            "postHoc": true,
+            "enhanceFairness": false,
+            "testSensitivityOfPredictions": false
+        },
+        "modelSpecificOrAgnostic": {
+            "specific": true,
+            "agnostic": false,
+            "enhanceFairness": false,
+            "testSensitivityOfPredictions": false
+        }
+    }
+]

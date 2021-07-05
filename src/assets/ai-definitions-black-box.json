@@ -1,0 +1,14 @@
+{
+            "method": {
+                "title": "Black-Box",
+                "definition": "This category encompasses methods that are concerned with black-box pretrained machine learning models. The methods do not try to create interpretable models, but, instead, try to interpret already trained, often complex models. That is also why they sometimes are referred to as post-hoc interpretability methods. This category is split into two sub-categories, one specifically for deep learning methods and one concerning all other black-box models."
+                },
+            "localOrGlobal": {
+                "title": "Local vs Global",
+                "definition": "If the method provides an explanation only for a specific instance, then it is a local one and, if the method explains the whole model, then it is global."
+                },
+            "modelSpecificOrAgnostic": {
+                "title": "Model Specific vs Agnostic",
+                "definition": "A model specific method can be applied to a single model or a group of specific models. On the other hand, a model agnostic method can be applied to any model."
+                }
+}

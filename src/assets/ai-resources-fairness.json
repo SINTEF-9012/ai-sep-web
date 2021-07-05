@@ -1,0 +1,557 @@
+[
+    {
+        "resource": "equalized_odds_and_calibration",
+        "id": 1,
+        "citationsPerYear": 242,
+        "year": 2016,
+        "description": "Text",
+        "paperTitle": "Equality of Opportunity in Supervised Learning",
+        "paperAbstract": "We propose a criterion for discrimination against a specified sensitive attribute in supervised learning, where the goal is to predict some target based on available features. Assuming data about the predictor, target, and membership in the protected group are available, we show how to optimally adjust any learned predictor so as to remove discrimination according to our definition. Our framework also improves incentives by shifting the cost of poor classification from disadvantaged groups to the decision maker, who can respond by improving the classification accuracy.",
+        "reference": "Hardt, M.; Price, E.; Srebro, N. Equality of opportunity in supervised learning. In Proceedings of the Advances in Neural Information Processing Systems, Barcelona, Spain, 5–10 December 2016; pp. 3315–3323.",
+        "resourceType": {
+            "paper": false,
+            "tool": true,
+            "method": false
+        },
+        "sourceURL": "https://arxiv.org/abs/1610.02413",
+        "repositoryUrl": "https://github.com/gpleiss/equalized_odds_and_calibration",
+        "localOrGlobal": {
+            "local": false,
+            "global": true
+        },
+        "dataTypes": {
+            "tabular": true,
+            "text": false,
+            "image": false,
+            "graph": false
+        },
+        "purposeOfInterpretability": {
+            "intrinsic": false,
+            "postHoc": false,
+            "enhanceFairness": true,
+            "testSensitivityOfPredictions": false
+        },
+        "modelSpecificOrAgnostic": {
+            "specific": false,
+            "agnostic": true
+        }
+    },
+    {
+        "resource": "fairlearn",
+        "id": 1,
+        "citationsPerYear": 242,
+        "year": 2016,
+        "description": "Text",
+        "paperTitle": "Equality of Opportunity in Supervised Learning",
+        "paperAbstract": "We propose a criterion for discrimination against a specified sensitive attribute in supervised learning, where the goal is to predict some target based on available features. Assuming data about the predictor, target, and membership in the protected group are available, we show how to optimally adjust any learned predictor so as to remove discrimination according to our definition. Our framework also improves incentives by shifting the cost of poor classification from disadvantaged groups to the decision maker, who can respond by improving the classification accuracy.",
+        "reference": "Hardt, M.; Price, E.; Srebro, N. Equality of opportunity in supervised learning. In Proceedings of the Advances in Neural Information Processing Systems, Barcelona, Spain, 5–10 December 2016; pp. 3315–3323.",
+        "resourceType": {
+            "paper": false,
+            "tool": true,
+            "method": false
+        },
+        "sourceURL": "https://arxiv.org/abs/1610.02413",
+        "repositoryUrl": "https://github.com/fairlearn/fairlearn",
+        "localOrGlobal": {
+            "local": false,
+            "global": true
+        },
+        "dataTypes": {
+            "tabular": true,
+            "text": false,
+            "image": false,
+            "graph": false
+        },
+        "purposeOfInterpretability": {
+            "intrinsic": false,
+            "postHoc": false,
+            "enhanceFairness": true,
+            "testSensitivityOfPredictions": false
+        },
+        "modelSpecificOrAgnostic": {
+            "specific": false,
+            "agnostic": true
+        }
+    },
+    {
+        "resource": "AIF360",
+        "id": 1,
+        "citationsPerYear": 242,
+        "year": 2016,
+        "description": "Text",
+        "paperTitle": "Equality of Opportunity in Supervised Learning",
+        "paperAbstract": "We propose a criterion for discrimination against a specified sensitive attribute in supervised learning, where the goal is to predict some target based on available features. Assuming data about the predictor, target, and membership in the protected group are available, we show how to optimally adjust any learned predictor so as to remove discrimination according to our definition. Our framework also improves incentives by shifting the cost of poor classification from disadvantaged groups to the decision maker, who can respond by improving the classification accuracy.",
+        "reference": "Hardt, M.; Price, E.; Srebro, N. Equality of opportunity in supervised learning. In Proceedings of the Advances in Neural Information Processing Systems, Barcelona, Spain, 5–10 December 2016; pp. 3315–3323.",
+        "resourceType": {
+            "paper": false,
+            "tool": true,
+            "method": false
+        },
+        "sourceURL": "https://arxiv.org/abs/1610.02413",
+        "repositoryUrl": "https://github.com/Trusted-AI/AIF360",
+        "localOrGlobal": {
+            "local": false,
+            "global": true
+        },
+        "dataTypes": {
+            "tabular": true,
+            "text": false,
+            "image": false,
+            "graph": false
+        },
+        "purposeOfInterpretability": {
+            "intrinsic": false,
+            "postHoc": false,
+            "enhanceFairness": true,
+            "testSensitivityOfPredictions": false
+        },
+        "modelSpecificOrAgnostic": {
+            "specific": false,
+            "agnostic": true
+        }
+    },
+    {
+        "resource": "debiaswe",
+        "id": 1,
+        "citationsPerYear": 217,
+        "year": 2016,
+        "description": "Text",
+        "paperTitle": "Man is to Computer Programmer as Woman is to Homemaker? Debiasing Word Embeddings",
+        "paperAbstract": "The blind application of machine learning runs the risk of amplifying biases present in data. Such a danger is facing us with word embedding, a popular framework to represent text data as vectors which has been used in many machine learning and natural language processing tasks. We show that even word embeddings trained on Google News articles exhibit female/male gender stereotypes to a disturbing extent. This raises concerns because their widespread use, as we describe, often tends to amplify these biases. Geometrically, gender bias is first shown to be captured by a direction in the word embedding. Second, gender neutral words are shown to be linearly separable from gender definition words in the word embedding. Using these properties, we provide a methodology for modifying an embedding to remove gender stereotypes, such as the association between between the words receptionist and female, while maintaining desired associations such as between the words queen and female.",
+        "reference": "Bolukbasi, T.; Chang, K.W.; Zou, J.Y.; Saligrama, V.; Kalai, A.T. Man is to computer programmer as woman is to homemaker? Debiasing word embeddings. In Proceedings of the Advances in Neural Information Processing Systems, Barcelona, Spain, 5–10 December 2016; pp. 4349–4357.",
+        "resourceType": {
+            "paper": false,
+            "tool": true,
+            "method": false
+        },
+        "sourceURL": "https://arxiv.org/abs/1607.06520",
+        "repositoryUrl": "https://github.com/tolga-b/debiaswe",
+        "localOrGlobal": {
+            "local": false,
+            "global": true
+        },
+        "dataTypes": {
+            "tabular": false,
+            "text": true,
+            "image": false,
+            "graph": false
+        },
+        "purposeOfInterpretability": {
+            "intrinsic": false,
+            "postHoc": false,
+            "enhanceFairness": true,
+            "testSensitivityOfPredictions": false
+        },
+        "modelSpecificOrAgnostic": {
+            "specific": false,
+            "agnostic": true
+        }
+    },
+    {
+        "resource": "fairness",
+        "id": 1,
+        "citationsPerYear": 133,
+        "year": 2012,
+        "description": "Text",
+        "paperTitle": "Fairness through awareness",
+        "paperAbstract": "We study fairness in classification, where individuals are classified, e.g., admitted to a university, and the goal is to prevent discrimination against individuals based on their membership in some group, while maintaining utility for the classifier (the university). The main conceptual contribution of this paper is a framework for fair classification comprising (1) a (hypothetical) task-specific metric for determining the degree to which individuals are similar with respect to the classification task at hand; (2) an algorithm for maximizing utility subject to the fairness constraint, that similar individuals are treated similarly. ",
+        "reference": "Dwork, C.; Hardt, M.; Pitassi, T.; Reingold, O.; Zemel, R. Fairness through awareness. In Proceedings of the 3rd Innovations in Theoretical Computer Science Conference, Cambridge, MA, USA, 8–10 January 2012; pp. 214–226.",
+        "resourceType": {
+            "paper": false,
+            "tool": true,
+            "method": false
+        },
+        "sourceURL": "https://dl.acm.org/doi/10.1145/2090236.2090255",
+        "repositoryUrl": "https://github.com/dodger487/fairness",
+        "localOrGlobal": {
+            "local": true,
+            "global": false
+        },
+        "dataTypes": {
+            "tabular": true,
+            "text": false,
+            "image": false,
+            "graph": false
+        },
+        "purposeOfInterpretability": {
+            "intrinsic": false,
+            "postHoc": false,
+            "enhanceFairness": true,
+            "testSensitivityOfPredictions": false
+        },
+        "modelSpecificOrAgnostic": {
+            "specific": false,
+            "agnostic": true
+        }
+    },
+    {
+        "resource": "Aequitas",
+        "id": 1,
+        "citationsPerYear": 125,
+        "year": 2015,
+        "description": "Text",
+        "paperTitle": "Certifying and removing disparate impact",
+        "paperAbstract": "Instead of requiring access to the algorithm, we propose making inferences based on the data the algorithm uses. We make four contributions to this problem. First, we link the legal notion of disparate impact to a measure of classification accuracy that while known, has received relatively little attention. Second, we propose a test for disparate impact based on analyzing the information leakage of the protected class from the other data attributes. Third, we describe methods by which data might be made unbiased. Finally, we present empirical evidence supporting the effectiveness of our test for disparate impact and our approach for both masking bias and preserving relevant information in the data. Interestingly, our approach resembles some actual selection practices that have recently received legal scrutiny.",
+        "reference": "Feldman, M.; Friedler, S.A.; Moeller, J.; Scheidegger, C.; Venkatasubramanian, S. Certifying and removing disparate impact. In Proceedings of the 21th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, Sydney, Australia, 10–13 August 2015; pp. 259–268.",
+        "resourceType": {
+            "paper": false,
+            "tool": true,
+            "method": false
+        },
+        "sourceURL": "https://arxiv.org/abs/1412.3756",
+        "repositoryUrl": "https://github.com/dssg/aequitas",
+        "localOrGlobal": {
+            "local": false,
+            "global": true
+        },
+        "dataTypes": {
+            "tabular": true,
+            "text": false,
+            "image": false,
+            "graph": false
+        },
+        "purposeOfInterpretability": {
+            "intrinsic": false,
+            "postHoc": false,
+            "enhanceFairness": true,
+            "testSensitivityOfPredictions": false
+        },
+        "modelSpecificOrAgnostic": {
+            "specific": false,
+            "agnostic": true
+        }
+    },
+    {
+        "resource": "AIF360",
+        "id": 1,
+        "citationsPerYear": 125,
+        "year": 2015,
+        "description": "Text",
+        "paperTitle": "Certifying and removing disparate impact",
+        "paperAbstract": "Instead of requiring access to the algorithm, we propose making inferences based on the data the algorithm uses. We make four contributions to this problem. First, we link the legal notion of disparate impact to a measure of classification accuracy that while known, has received relatively little attention. Second, we propose a test for disparate impact based on analyzing the information leakage of the protected class from the other data attributes. Third, we describe methods by which data might be made unbiased. Finally, we present empirical evidence supporting the effectiveness of our test for disparate impact and our approach for both masking bias and preserving relevant information in the data. Interestingly, our approach resembles some actual selection practices that have recently received legal scrutiny.",
+        "reference": "Feldman, M.; Friedler, S.A.; Moeller, J.; Scheidegger, C.; Venkatasubramanian, S. Certifying and removing disparate impact. In Proceedings of the 21th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, Sydney, Australia, 10–13 August 2015; pp. 259–268.",
+        "resourceType": {
+            "paper": false,
+            "tool": true,
+            "method": false
+        },
+        "sourceURL": "https://arxiv.org/abs/1412.3756",
+        "repositoryUrl": "https://github.com/Trusted-AI/AIF360",
+        "localOrGlobal": {
+            "local": false,
+            "global": true
+        },
+        "dataTypes": {
+            "tabular": true,
+            "text": false,
+            "image": false,
+            "graph": false
+        },
+        "purposeOfInterpretability": {
+            "intrinsic": false,
+            "postHoc": false,
+            "enhanceFairness": true,
+            "testSensitivityOfPredictions": false
+        },
+        "modelSpecificOrAgnostic": {
+            "specific": false,
+            "agnostic": true
+        }
+    },
+    {
+        "resource": "fair-classification",
+        "id": 1,
+        "citationsPerYear": 118,
+        "year": 2017,
+        "description": "Text",
+        "paperTitle": "Fairness Beyond Disparate Treatment & Disparate Impact: Learning Classification without Disparate Mistreatment",
+        "paperAbstract": "Automated data-driven decision making systems are increasingly being used to assist, or even replace humans in many settings. These systems function by learning from historical decisions, often taken by humans. In order to maximize the utility of these systems (or, classifiers), their training involves minimizing the errors (or, misclassifications) over the given historical data. However, it is quite possible that the optimally trained classifier makes decisions for people belonging to different social groups with different misclassification rates (e.g., misclassification rates for females are higher than for males), thereby placing these groups at an unfair disadvantage. To account for and avoid such unfairness, in this paper, we introduce a new notion of unfairness, disparate mistreatment, which is defined in terms of misclassification rates. We then propose intuitive measures of disparate mistreatment for decision boundary-based classifiers, which can be easily incorporated into their formulation as convex-concave constraints. ",
+        "reference": "Zafar, M.B.; Valera, I.; Gomez Rodriguez, M.; Gummadi, K.P. Fairness beyond disparate treatment & disparate impact: Learning classification without disparate mistreatment. In Proceedings of the 26th International Conference onWorldWideWeb, Perth, Australia, 3–7 April 2017; pp. 1171–1180.",
+        "resourceType": {
+            "paper": false,
+            "tool": true,
+            "method": false
+        },
+        "sourceURL": "https://arxiv.org/abs/1610.08452",
+        "repositoryUrl": "https://github.com/mbilalzafar/fair-classification",
+        "localOrGlobal": {
+            "local": false,
+            "global": true
+        },
+        "dataTypes": {
+            "tabular": true,
+            "text": false,
+            "image": false,
+            "graph": false
+        },
+        "purposeOfInterpretability": {
+            "intrinsic": false,
+            "postHoc": false,
+            "enhanceFairness": true,
+            "testSensitivityOfPredictions": false
+        },
+        "modelSpecificOrAgnostic": {
+            "specific": false,
+            "agnostic": true
+        }
+    },
+    {
+        "resource": "fairness-in-ml",
+        "id": 1,
+        "citationsPerYear": 116,
+        "year": 2017,
+        "description": "Text",
+        "paperTitle": "Counterfactual fairness",
+        "paperAbstract": "Machine learning can impact people with legal or ethical consequences when it is used to automate decisions in areas such as insurance, lending, hiring, and predictive policing. In many of these scenarios, previous decisions have been made that are unfairly biased against certain subpopulations, for example those of a particular race, gender, or sexual orientation. Since this past data may be biased, machine learning predictors must account for this to avoid perpetuating or creating discriminatory practices. In this paper, we develop a framework for modeling fairness using tools from causal inference. Our definition of counterfactual fairness captures the intuition that a decision is fair towards an individual if it the same in (a) the actual world and (b) a counterfactual world where the individual belonged to a different demographic group. ",
+        "reference": "Kusner, M.J.; Loftus, J.; Russell, C.; Silva, R. Counterfactual fairness. In Proceedings of the Advances in Neural Information Processing Systems, Long Beach, CA, USA, 4–9 December 2017; pp. 4066–4076.",
+        "resourceType": {
+            "paper": false,
+            "tool": true,
+            "method": false
+        },
+        "sourceURL": "https://dl.acm.org/doi/10.5555/3294996.3295162",
+        "repositoryUrl": "https://github.com/equialgo/fairness-in-ml",
+        "localOrGlobal": {
+            "local": true,
+            "global": false
+        },
+        "dataTypes": {
+            "tabular": true,
+            "text": false,
+            "image": false,
+            "graph": false
+        },
+        "purposeOfInterpretability": {
+            "intrinsic": false,
+            "postHoc": false,
+            "enhanceFairness": true,
+            "testSensitivityOfPredictions": false
+        },
+        "modelSpecificOrAgnostic": {
+            "specific": false,
+            "agnostic": true
+        }
+    },
+    {
+        "resource": "fair-classification",
+        "id": 1,
+        "citationsPerYear": 111,
+        "year": 2017,
+        "description": "Text",
+        "paperTitle": "Fairness Constraints: Mechanisms for Fair Classification",
+        "paperAbstract": "Algorithmic decision making systems are ubiquitous across a wide variety of online as well as offline services. These systems rely on complex learning methods and vast amounts of data to optimize the service functionality, satisfaction of the end user and profitability. However, there is a growing concern that these automated decisions can lead, even in the absence of intent, to a lack of fairness, i.e., their outcomes can disproportionately hurt (or, benefit) particular groups of people sharing one or more sensitive attributes (e.g., race, sex). In this paper, we introduce a flexible mechanism to design fair classifiers by leveraging a novel intuitive measure of decision boundary (un)fairness. We instantiate this mechanism with two well-known classifiers, logistic regression and support vector machines, and show on real-world data that our mechanism allows for a fine-grained control on the degree of fairness, often at a small cost in terms of accuracy.",
+        "reference": "Zafar, M.B.; Valera, I.; Rogriguez, M.G.; Gummadi, K.P. Fairness constraints: Mechanisms for fair classification. In Proceedings of the Artificial Intelligence and Statistics, Fort Lauderdale, FL, USA, 20–22 April 2017; pp. 962–970.",
+        "resourceType": {
+            "paper": false,
+            "tool": true,
+            "method": false
+        },
+        "sourceURL": "https://arxiv.org/abs/1507.05259",
+        "repositoryUrl": "https://github.com/mbilalzafar/fair-classification",
+        "localOrGlobal": {
+            "local": false,
+            "global": true
+        },
+        "dataTypes": {
+            "tabular": true,
+            "text": false,
+            "image": false,
+            "graph": false
+        },
+        "purposeOfInterpretability": {
+            "intrinsic": false,
+            "postHoc": false,
+            "enhanceFairness": true,
+            "testSensitivityOfPredictions": false
+        },
+        "modelSpecificOrAgnostic": {
+            "specific": false,
+            "agnostic": true
+        }
+    },
+    {
+        "resource": "fairlearn",
+        "id": 1,
+        "citationsPerYear": 94,
+        "year": 2018,
+        "description": "Text",
+        "paperTitle": "A Reductions Approach to Fair Classification",
+        "paperAbstract": "We present a systematic approach for achieving fairness in a binary classification setting. While we focus on two well-known quantitative definitions of fairness, our approach encompasses many other previously studied definitions as special cases. The key idea is to reduce fair classification to a sequence of cost-sensitive classification problems, whose solutions yield a randomized classifier with the lowest (empirical) error subject to the desired constraints. We introduce two reductions that work for any representation of the cost-sensitive classifier and compare favorably to prior baselines on a variety of data sets, while overcoming several of their disadvantages.",
+        "reference": "Agarwal, A.; Beygelzimer, A.; Dudík, M.; Langford, J.;Wallach, H.M. A Reductions Approach to Fair Classification. In Proceedings of the 35th International Conference on Machine Learning, ICML 2018, Stockholmsmässan, Stockholm, Sweden, 10–15 July 2018; Volume 80, pp. 60–69.",
+        "resourceType": {
+            "paper": false,
+            "tool": true,
+            "method": false
+        },
+        "sourceURL": "https://arxiv.org/abs/1803.02453",
+        "repositoryUrl": "https://github.com/fairlearn/fairlearn",
+        "localOrGlobal": {
+            "local": false,
+            "global": true
+        },
+        "dataTypes": {
+            "tabular": true,
+            "text": false,
+            "image": false,
+            "graph": false
+        },
+        "purposeOfInterpretability": {
+            "intrinsic": false,
+            "postHoc": false,
+            "enhanceFairness": true,
+            "testSensitivityOfPredictions": false
+        },
+        "modelSpecificOrAgnostic": {
+            "specific": false,
+            "agnostic": true
+        }
+    },
+    {
+        "resource": "AIF360",
+        "id": 1,
+        "citationsPerYear": 76,
+        "year": 2018,
+        "description": "Text",
+        "paperTitle": "Learning fair representations",
+        "paperAbstract": "We propose a learning algorithm for fair classification that achieves both group fairness (the proportion of members in a protected group receiving positive classification is identical to the proportion in the population as a whole), and individual fairness (similar individuals should be treated similarly). We formulate fairness as an optimization problem of finding a good representation of the data with two competing goals: to encode the data as well as possible, while simultaneously obfuscating any information about membership in the protected group.",
+        "reference": "Zemel, R.;Wu, Y.; Swersky, K.; Pitassi, T.; Dwork, C. Learning fair representations. In Proceedings of the International Conference on Machine Learning, Atlanta, GA, USA, 16–21 June 2013; pp. 325–333.",
+        "resourceType": {
+            "paper": false,
+            "tool": true,
+            "method": false
+        },
+        "sourceURL": "https://dl.acm.org/doi/10.5555/3042817.3042973",
+        "repositoryUrl": "https://github.com/Trusted-AI/AIF360",
+        "localOrGlobal": {
+            "local": false,
+            "global": true
+        },
+        "dataTypes": {
+            "tabular": true,
+            "text": false,
+            "image": false,
+            "graph": false
+        },
+        "purposeOfInterpretability": {
+            "intrinsic": false,
+            "postHoc": false,
+            "enhanceFairness": true,
+            "testSensitivityOfPredictions": false
+        },
+        "modelSpecificOrAgnostic": {
+            "specific": false,
+            "agnostic": true
+        }
+    },
+    {
+        "resource": "ML-fairness-gym",
+        "id": 1,
+        "citationsPerYear": 52,
+        "year": 2018,
+        "description": "Text",
+        "paperTitle": "Delayed Impact of Fair Machine Learning",
+        "paperAbstract": "Fairness in machine learning has predominantly been studied in static classification settings without concern for how decisions change the underlying population over time. Conventional wisdom suggests that fairness criteria promote the long-term well-being of those groups they aim to protect. We study how static fairness criteria interact with temporal indicators of well-being, such as long-term improvement, stagnation, and decline in a variable of interest. We demonstrate that even in a one-step feedback model, common fairness criteria in general do not promote improvement over time, and may in fact cause harm in cases where an unconstrained objective would not. We completely characterize the delayed impact of three standard criteria, contrasting the regimes in which these exhibit qualitatively different behavior. In addition, we find that a natural form of measurement error broadens the regime in which fairness criteria perform favorably.",
+        "reference": "Liu, L.T.; Dean, S.; Rolf, E.; Simchowitz, M.; Hardt, M. Delayed Impact of Fair Machine Learning. In Proceedings of the 35th International Conference on Machine Learning, ICML 2018, Stockholmsmässan, Stockholm, Sweden, 10–15 July 2018; Volume 80, pp. 3156–3164.",
+        "resourceType": {
+            "paper": false,
+            "tool": true,
+            "method": false
+        },
+        "sourceURL": "https://arxiv.org/abs/1803.04383",
+        "repositoryUrl": "https://github.com/google/ml-fairness-gym",
+        "localOrGlobal": {
+            "local": false,
+            "global": true
+        },
+        "dataTypes": {
+            "tabular": true,
+            "text": false,
+            "image": false,
+            "graph": false
+        },
+        "purposeOfInterpretability": {
+            "intrinsic": false,
+            "postHoc": false,
+            "enhanceFairness": true,
+            "testSensitivityOfPredictions": false
+        },
+        "modelSpecificOrAgnostic": {
+            "specific": false,
+            "agnostic": true
+        }
+    },
+    {
+        "resource": "fairness-comparison",
+        "id": 1,
+        "citationsPerYear": 45,
+        "year": 2010,
+        "description": "Text",
+        "paperTitle": "Three naive Bayes approaches for discrimination-free classification",
+        "paperAbstract": "In this paper, we investigate how to modify the naive Bayes classifier in order to perform classification that is restricted to be independent with respect to a given sensitive attribute. Such independency restrictions occur naturally when the decision process leading to the labels in the data-set was biased; e.g., due to gender or racial discrimination. This setting is motivated by many cases in which there exist laws that disallow a decision that is partly based on discrimination. Naive application of machine learning techniques would result in huge fines for companies. We present three approaches for making the naive Bayes classifier discrimination-free: (i) modifying the probability of the decision being positive, (ii) training one model for every sensitive attribute value and balancing them, and (iii) adding a latent variable to the Bayesian model that represents the unbiased label and optimizing the model parameters for likelihood using expectation maximization. ",
+        "reference": "Calders, T.; Verwer, S. Three naive Bayes approaches for discrimination-free classification. Data Min. Knowl. Discov. 2010, 21, 277–292.",
+        "resourceType": {
+            "paper": false,
+            "tool": true,
+            "method": false
+        },
+        "sourceURL": "https://link.springer.com/article/10.1007/s10618-010-0190-x",
+        "repositoryUrl": "https://github.com/algofairness/fairness-comparison",
+        "localOrGlobal": {
+            "local": false,
+            "global": true
+        },
+        "dataTypes": {
+            "tabular": true,
+            "text": false,
+            "image": false,
+            "graph": false
+        },
+        "purposeOfInterpretability": {
+            "intrinsic": false,
+            "postHoc": false,
+            "enhanceFairness": true,
+            "testSensitivityOfPredictions": false
+        },
+        "modelSpecificOrAgnostic": {
+            "specific": true,
+            "agnostic": false
+        }
+    },
+    {
+        "resource": "procedurally_fair_learning",
+        "id": 1,
+        "citationsPerYear": 22,
+        "year": 2018,
+        "description": "Text",
+        "paperTitle": "Beyond Distributive Fairness in Algorithmic Decision Making: Feature Selection for Procedurally Fair Learning",
+        "paperAbstract": "In this work, we leverage the rich literature on organizational justice and focus on another dimension of fair decision making: procedural fairness, i.e., the fairness of the decision making process. We propose measures for procedural fairness that consider the input features used in the decision process, and evaluate the moral judgments of humans regarding the use of these features. We operationalize these measures on two real world datasets using human surveys on the Amazon Mechanical Turk (AMT) platform, demonstrating that our measures capture important properties of procedurally fair decision making. We provide fast submodular mechanisms to optimize the tradeoff between procedural fairness and prediction accuracy.",
+        "reference": "Grgic-Hlaca, N.; Zafar, M.B.; Gummadi, K.P.;Weller, A. Beyond Distributive Fairness in Algorithmic Decision Making: Feature Selection for Procedurally Fair Learning. In Proceedings of the AAAI, New Orleans, LA, USA, 2–7 February 2018; pp. 51–60.",
+        "resourceType": {
+            "paper": false,
+            "tool": true,
+            "method": false
+        },
+        "sourceURL": "https://ojs.aaai.org/index.php/AAAI/article/view/11296",
+        "repositoryUrl": "https://github.com/nina-gh/procedurally_fair_learning",
+        "localOrGlobal": {
+            "local": false,
+            "global": true
+        },
+        "dataTypes": {
+            "tabular": true,
+            "text": false,
+            "image": false,
+            "graph": false
+        },
+        "purposeOfInterpretability": {
+            "intrinsic": false,
+            "postHoc": false,
+            "enhanceFairness": true,
+            "testSensitivityOfPredictions": false
+        },
+        "modelSpecificOrAgnostic": {
+            "specific": false,
+            "agnostic": true
+        }
+    }
+]

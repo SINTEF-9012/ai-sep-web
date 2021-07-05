@@ -1,0 +1,362 @@
+[
+    {
+        "resource": "cleverhans",
+        "id": 1,
+        "citationsPerYear": 876,
+        "year": 2014,
+        "description": "Text",
+        "paperTitle": "Explaining and Harnessing Adversarial Examples",
+        "paperAbstract": "Several machine learning models, including neural networks, consistently misclassify adversarial examples---inputs formed by applying small but intentionally worst-case perturbations to examples from the dataset, such that the perturbed input results in the model outputting an incorrect answer with high confidence. Early attempts at explaining this phenomenon focused on nonlinearity and overfitting. We argue instead that the primary cause of neural networks' vulnerability to adversarial perturbation is their linear nature. This explanation is supported by new quantitative results while giving the first explanation of the most intriguing fact about them: their generalization across architectures and training sets. Moreover, this view yields a simple and fast method of generating adversarial examples. Using this approach to provide examples for adversarial training, we reduce the test set error of a maxout network on the MNIST dataset.",
+        "resourceType": {
+            "paper": false,
+            "tool": true,
+            "method": false
+        },
+        "sourceURL": "https://arxiv.org/abs/1412.6572",
+        "repositoryUrl": "https://github.com/tensorflow/cleverhans",
+        "localOrGlobal": {
+            "local": true,
+            "global": true
+        },
+        "dataTypes": {
+            "tabular": false,
+            "text": false,
+            "image": true,
+            "graph": false
+        },
+        "purposeOfInterpretability": {
+            "intrinsic": false,
+            "postHoc": false,
+            "enhanceFairness": false,
+            "testSensitivityOfPredictions": true
+        },
+        "modelSpecificOrAgnostic": {
+            "specific": false,
+            "agnostic": true
+        }
+    },
+    {
+        "resource": "one-pixel-attack-keras",
+        "id": 1,
+        "citationsPerYear": 409,
+        "year": 2019,
+        "description": "Text",
+        "paperTitle": "One pixel attack for fooling deep neural networks",
+        "paperAbstract": "Recent research has revealed that the output of Deep Neural Networks (DNN) can be easily altered by adding relatively small perturbations to the input vector. In this paper, we analyze an attack in an extremely limited scenario where only one pixel can be modified. For that we propose a novel method for generating one-pixel adversarial perturbations based on differential evolution (DE). It requires less adversarial information (a black-box attack) and can fool more types of networks due to the inherent features of DE. The results show that 67.97% of the natural images in Kaggle CIFAR-10 test dataset and 16.04% of the ImageNet (ILSVRC 2012) test images can be perturbed to at least one target class by modifying just one pixel with 74.03% and 22.91% confidence on average. We also show the same vulnerability on the original CIFAR-10 dataset. Thus, the proposed attack explores a different take on adversarial machine learning in an extreme limited scenario, showing that current DNNs are also vulnerable to such low dimension attacks. ",
+        "resourceType": {
+            "paper": false,
+            "tool": true,
+            "method": false
+        },
+        "sourceURL": "https://arxiv.org/abs/1710.08864",
+        "repositoryUrl": "https://github.com/bethgelab/foolbox",
+        "localOrGlobal": {
+            "local": true,
+            "global": true
+        },
+        "dataTypes": {
+            "tabular": false,
+            "text": false,
+            "image": true,
+            "graph": false
+        },
+        "purposeOfInterpretability": {
+            "intrinsic": false,
+            "postHoc": false,
+            "enhanceFairness": false,
+            "testSensitivityOfPredictions": true
+        },
+        "modelSpecificOrAgnostic": {
+            "specific": false,
+            "agnostic": true
+        }
+    },
+    {
+        "resource": "influence-release",
+        "id": 1,
+        "citationsPerYear": 224,
+        "year": 2017,
+        "description": "Text",
+        "paperTitle": "Understanding Black-box Predictions via Influence Functions",
+        "paperAbstract": "How can we explain the predictions of a black-box model? In this paper, we use influence functions -- a classic technique from robust statistics -- to trace a model's prediction through the learning algorithm and back to its training data, thereby identifying training points most responsible for a given prediction. To scale up influence functions to modern machine learning settings, we develop a simple, efficient implementation that requires only oracle access to gradients and Hessian-vector products. We show that even on non-convex and non-differentiable models where the theory breaks down, approximations to influence functions can still provide valuable information. On linear models and convolutional neural networks, we demonstrate that influence functions are useful for multiple purposes: understanding model behavior, debugging models, detecting dataset errors, and even creating visually-indistinguishable training-set attacks.",
+        "resourceType": {
+            "paper": false,
+            "tool": true,
+            "method": false
+        },
+        "sourceURL": "https://arxiv.org/abs/1703.04730",
+        "repositoryUrl": "https://github.com/kohpangwei/influence-release",
+        "localOrGlobal": {
+            "local": true,
+            "global": true
+        },
+        "dataTypes": {
+            "tabular": false,
+            "text": false,
+            "image": true,
+            "graph": false
+        },
+        "purposeOfInterpretability": {
+            "intrinsic": false,
+            "postHoc": false,
+            "enhanceFairness": false,
+            "testSensitivityOfPredictions": true
+        },
+        "modelSpecificOrAgnostic": {
+            "specific": false,
+            "agnostic": true
+        }
+    },
+    {
+        "resource": "adversarial-squad",
+        "id": 1,
+        "citationsPerYear": 162,
+        "year": 2017,
+        "description": "Text",
+        "paperTitle": "Adversarial Examples for Evaluating Reading Comprehension Systems",
+        "paperAbstract": "Standard accuracy metrics indicate that reading comprehension systems are making rapid progress, but the extent to which these systems truly understand language remains unclear. To reward systems with real language understanding abilities, we propose an adversarial evaluation scheme for the Stanford Question Answering Dataset (SQuAD). Our method tests whether systems can answer questions about paragraphs that contain adversarially inserted sentences, which are automatically generated to distract computer systems without changing the correct answer or misleading humans. In this adversarial setting, the accuracy of sixteen published models drops from an average of 75% F1 score to 36%; when the adversary is allowed to add ungrammatical sequences of words, average accuracy on four models decreases further to 7%. We hope our insights will motivate the development of new models that understand language more precisely.",
+        "resourceType": {
+            "paper": false,
+            "tool": true,
+            "method": false
+        },
+        "sourceURL": "https://arxiv.org/abs/1707.07328",
+        "repositoryUrl": "https://github.com/robinjia/adversarial-squad",
+        "localOrGlobal": {
+            "local": true,
+            "global": true
+        },
+        "dataTypes": {
+            "tabular": false,
+            "text": true,
+            "image": false,
+            "graph": false
+        },
+        "purposeOfInterpretability": {
+            "intrinsic": false,
+            "postHoc": false,
+            "enhanceFairness": false,
+            "testSensitivityOfPredictions": true
+        },
+        "modelSpecificOrAgnostic": {
+            "specific": true,
+            "agnostic": false
+        }
+    },
+    {
+        "resource": "transferability-advdnn-pub",
+        "id": 1,
+        "citationsPerYear": 149,
+        "year": 2016,
+        "description": "Text",
+        "paperTitle": "Delving into Transferable Adversarial Examples and Black-box Attacks",
+        "paperAbstract": "An intriguing property of deep neural networks is the existence of adversarial examples, which can transfer among different architectures. These transferable adversarial examples may severely hinder deep neural network-based applications. Previous works mostly study the transferability using small scale datasets. In this work, we are the first to conduct an extensive study of the transferability over large models and a large scale dataset, and we are also the first to study the transferability of targeted adversarial examples with their target labels. We study both non-targeted and targeted adversarial examples, and show that while transferable non-targeted adversarial examples are easy to find, targeted adversarial examples generated using existing approaches almost never transfer with their target labels. Therefore, we propose novel ensemble-based approaches to generating transferable adversarial examples. Using such approaches, we observe a large proportion of targeted adversarial examples that are able to transfer with their target labels for the first time. ",
+        "resourceType": {
+            "paper": false,
+            "tool": true,
+            "method": false
+        },
+        "sourceURL": "https://arxiv.org/abs/1611.02770",
+        "repositoryUrl": "https://github.com/sunblaze-ucb/transferability-advdnn-pub",
+        "localOrGlobal": {
+            "local": true,
+            "global": true
+        },
+        "dataTypes": {
+            "tabular": false,
+            "text": false,
+            "image": true,
+            "graph": false
+        },
+        "purposeOfInterpretability": {
+            "intrinsic": false,
+            "postHoc": false,
+            "enhanceFairness": false,
+            "testSensitivityOfPredictions": true
+        },
+        "modelSpecificOrAgnostic": {
+            "specific": false,
+            "agnostic": true
+        }
+    },
+    {
+        "resource": "accessorize-to-a-crime",
+        "id": 1,
+        "citationsPerYear": 142,
+        "year": 2016,
+        "description": "Text",
+        "paperTitle": "Accessorize to a Crime: Real and Stealthy Attacks on State-of-the-Art Face Recognition",
+        "paperAbstract": "In this paper, we focus on facial biometric systems, which are widely used in surveillance and access control. We define and investigate a novel class of attacks: attacks that are physically realizable and inconspicuous, and allow an attacker to evade recognition or impersonate another individual. We develop a systematic method to automatically generate such attacks, which are realized through printing a pair of eyeglass frames. When worn by the attacker whose image is supplied to a state-of-the-art face-recognition algorithm, the eyeglasses allow her to evade being recognized or to impersonate another individual. Our investigation focuses on white-box face-recognition systems, but we also demonstrate how similar techniques can be used in black-box scenarios, as well as to avoid face detection.",
+        "resourceType": {
+            "paper": false,
+            "tool": true,
+            "method": false
+        },
+        "sourceURL": "https://dl.acm.org/doi/10.1145/2976749.2978392",
+        "repositoryUrl": "https://github.com/mahmoods01/accessorize-to-a-crime",
+        "localOrGlobal": {
+            "local": true,
+            "global": true
+        },
+        "dataTypes": {
+            "tabular": false,
+            "text": false,
+            "image": true,
+            "graph": false
+        },
+        "purposeOfInterpretability": {
+            "intrinsic": false,
+            "postHoc": false,
+            "enhanceFairness": false,
+            "testSensitivityOfPredictions": true
+        },
+        "modelSpecificOrAgnostic": {
+            "specific": false,
+            "agnostic": true
+        }
+    },
+    {
+        "resource": "ZOO-Attack",
+        "id": 1,
+        "citationsPerYear": 130,
+        "year": 2017,
+        "description": "Text",
+        "paperTitle": "ZOO: Zeroth Order Optimization based Black-box Attacks to Deep Neural Networks without Training Substitute Models",
+        "paperAbstract": "Similar to the setting of training substitute models, in this paper we propose an effective black-box attack that also only has access to the input (images) and the output (confidence scores) of a targeted DNN. However, different from leveraging attack transferability from substitute models, we propose zeroth order optimization (ZOO) based attacks to directly estimate the gradients of the targeted DNN for generating adversarial examples. We use zeroth order stochastic coordinate descent along with dimension reduction, hierarchical attack and importance sampling techniques to efficiently attack black-box models. By exploiting zeroth order optimization, improved attacks to the targeted DNN can be accomplished, sparing the need for training substitute models and avoiding the loss in attack transferability. Experimental results on MNIST, CIFAR10 and ImageNet show that the proposed ZOO attack is as effective as the state-of-the-art white-box attack and significantly outperforms existing black-box attacks via substitute models.",
+        "resourceType": {
+            "paper": false,
+            "tool": true,
+            "method": false
+        },
+        "sourceURL": "https://arxiv.org/abs/1708.03999",
+        "repositoryUrl": "https://github.com/huanzhang12/ZOO-Attack",
+        "localOrGlobal": {
+            "local": true,
+            "global": true
+        },
+        "dataTypes": {
+            "tabular": false,
+            "text": false,
+            "image": true,
+            "graph": false
+        },
+        "purposeOfInterpretability": {
+            "intrinsic": false,
+            "postHoc": false,
+            "enhanceFairness": false,
+            "testSensitivityOfPredictions": true
+        },
+        "modelSpecificOrAgnostic": {
+            "specific": false,
+            "agnostic": true
+        }
+    },
+    {
+        "resource": "TextAttack",
+        "id": 1,
+        "citationsPerYear": 83,
+        "year": 2020,
+        "description": "Text",
+        "paperTitle": "Seq2Sick: Evaluating the Robustness of Sequence-to-Sequence Models with Adversarial Examples",
+        "paperAbstract": "In this paper, we study the much more challenging problem of crafting adversarial examples for sequence-to-sequence (seq2seq) models, whose inputs are discrete text strings and outputs have an almost infinite number of possibilities. To address the challenges caused by the discrete input space, we propose a projected gradient method combined with group lasso and gradient regularization. To handle the almost infinite output space, we design some novel loss functions to conduct non-overlapping attack and targeted keyword attack. We apply our algorithm to machine translation and text summarization tasks, and verify the effectiveness of the proposed algorithm: by changing less than 3 words, we can make seq2seq model to produce desired outputs with high success rates. On the other hand, we recognize that, compared with the well-evaluated CNN-based classifiers, seq2seq models are intrinsically more robust to adversarial attacks.",
+        "resourceType": {
+            "paper": false,
+            "tool": true,
+            "method": false
+        },
+        "sourceURL": "https://arxiv.org/abs/1803.01128",
+        "repositoryUrl": "https://github.com/QData/TextAttack",
+        "localOrGlobal": {
+            "local": true,
+            "global": true
+        },
+        "dataTypes": {
+            "tabular": false,
+            "text": true,
+            "image": false,
+            "graph": false
+        },
+        "purposeOfInterpretability": {
+            "intrinsic": false,
+            "postHoc": false,
+            "enhanceFairness": false,
+            "testSensitivityOfPredictions": true
+        },
+        "modelSpecificOrAgnostic": {
+            "specific": true,
+            "agnostic": false
+        }
+    },
+    {
+        "resource": "nlp_adversarial_examples",
+        "id": 1,
+        "citationsPerYear": 70,
+        "year": 2018,
+        "description": "Text",
+        "paperTitle": "Generating Natural Language Adversarial Examples",
+        "paperAbstract": "Deep neural networks (DNNs) are vulnerable to adversarial examples, perturbations to correctly classified examples which can cause the model to misclassify. In the image domain, these perturbations are often virtually indistinguishable to human perception, causing humans and state-of-the-art models to disagree. However, in the natural language domain, small perturbations are clearly perceptible, and the replacement of a single word can drastically alter the semantics of the document. Given these challenges, we use a black-box population-based optimization algorithm to generate semantically and syntactically similar adversarial examples that fool well-trained sentiment analysis and textual entailment models with success rates of 97% and 70%, respectively. We additionally demonstrate that 92.3% of the successful sentiment analysis adversarial examples are classified to their original label by 20 human annotators, and that the examples are perceptibly quite similar. ",
+        "resourceType": {
+            "paper": false,
+            "tool": true,
+            "method": false
+        },
+        "sourceURL": "https://arxiv.org/abs/1804.07998",
+        "repositoryUrl": "https://github.com/nesl/nlp_adversarial_examples",
+        "localOrGlobal": {
+            "local": true,
+            "global": true
+        },
+        "dataTypes": {
+            "tabular": false,
+            "text": true,
+            "image": false,
+            "graph": false
+        },
+        "purposeOfInterpretability": {
+            "intrinsic": false,
+            "postHoc": false,
+            "enhanceFairness": false,
+            "testSensitivityOfPredictions": true
+        },
+        "modelSpecificOrAgnostic": {
+            "specific": true,
+            "agnostic": false
+        }
+    },
+    {
+        "resource": "scpn",
+        "id": 1,
+        "citationsPerYear": 67,
+        "year": 2018,
+        "description": "Text",
+        "paperTitle": "Adversarial Example Generation with Syntactically Controlled Paraphrase Networks",
+        "paperAbstract": "We propose syntactically controlled paraphrase networks (SCPNs) and use them to generate adversarial examples. Given a sentence and a target syntactic form (e.g., a constituency parse), SCPNs are trained to produce a paraphrase of the sentence with the desired syntax. We show it is possible to create training data for this task by first doing backtranslation at a very large scale, and then using a parser to label the syntactic transformations that naturally occur during this process. Such data allows us to train a neural encoder-decoder model with extra inputs to specify the target syntax. A combination of automated and human evaluations show that SCPNs generate paraphrases that follow their target specifications without decreasing paraphrase quality when compared to baseline (uncontrolled) paraphrase systems. Furthermore, they are more capable of generating syntactically adversarial examples that both (1) fool pretrained models and (2) improve the robustness of these models to syntactic variation when used to augment their training data.",
+        "resourceType": {
+            "paper": false,
+            "tool": true,
+            "method": false
+        },
+        "sourceURL": "https://arxiv.org/abs/1804.06059",
+        "repositoryUrl": "https://github.com/miyyer/scpn",
+        "localOrGlobal": {
+            "local": true,
+            "global": true
+        },
+        "dataTypes": {
+            "tabular": false,
+            "text": true,
+            "image": false,
+            "graph": false
+        },
+        "purposeOfInterpretability": {
+            "intrinsic": false,
+            "postHoc": false,
+            "enhanceFairness": false,
+            "testSensitivityOfPredictions": true
+        },
+        "modelSpecificOrAgnostic": {
+            "specific": true,
+            "agnostic": false
+        }
+    }
+]

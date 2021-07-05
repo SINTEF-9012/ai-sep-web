@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+  <table style="width:90%">
+    <td>
+      <h3>What is Graph Data Science?</h3>
+
+      <p>Graph Data Science is a science-driven approach to gain knowledge from the relationships and structures in data,
+        typically to power predictions. It covers methods, techniques, algorithms and tools that help data scientists
+        answer questions and explain outcomes using graph data.</p>
+  
+      <h3>How are graphs used in data science?</h3>
+  
+      <p>A graph is an abstract data type that requires two basic building blocks: nodes and vertices. A graph utilises
+        the basic idea of using vertices to establish relationships between pairs of nodes. In terms of applications, many
+        real world relationships are best modeled using graph structures.</p>
+  
+      In this section we will cover two popular graph models, namely RDF graphs and property graphs.
+  
+      <h3>RDF graph</h3>
+  
+      <p>An RDF graph is data structured according to the <a
+          href="https://www.w3.org/TR/rdf11-primer/#section-triple" target="_blank" rel="noopener noreferrer">Resource Description Framework (RDF) data model.</a>
+        A semantic triple, or RDF triple or simply triple, is the atomic data entity in the RDF data model. As its name
+        indicates, a triple is a set of three entities that codifies a statement about semantic data in the form of
+        subject–predicate–object expressions (e.g., "Bob is 35", or "Bob knows John").</p>
+  
+      <p>The <a href="http://www.linkeddatatools.com/introducing-rdf" target="_blank" rel="noopener noreferrer">LinkedDataTools RDF tutorial</a> gives further
+        details and examples of RDF graphs. See <a
+          href="https://db-engines.com/en/ranking/rdf+store" target="_blank" rel="noopener noreferrer">https://db-engines.com/en/ranking/rdf+store</a> for a list of
+        databases that support RDF.</p>
+  
+      <h4>Example</h4>
+  
+      <img src="assets/img/rdf_graph_example.png">
+  
+      <h3>Property graph</h3>
+  
+      <p>A property graph or labeled property graph (LPG) are much simpler than RDF. They consist of a set of nodes and a
+        set of edges, with each node and edge being essentially a struct, or a simple data structure, consisting of keys
+        and values. JSON is a standard way of encoding these structs. Each node and edge is a JSON document, with edges
+        having special keys with values pointing to a node. Nodes can be labelled to be grouped.</p>
+  
+      <p>According to <a
+          href="https://db-engines.com/en/ranking/graph+dbms" target="_blank" rel="noopener noreferrer">https://db-engines.com/en/ranking/graph+dbms</a>, Neo4j
+        ranks as the most popular graph database.
+      <p>For further details on property graphs and examples please consult the <a
+          href="https://neo4j.com/docs/getting-started/current/graphdb-concepts/" target="_blank" rel="noopener noreferrer">Neo4j graph database concepts</a>.</p>
+  
+      <h4>Example</h4>
+  
+      <img src="assets/img/lpg_graph_example.png">
+  
+      <h3>Research challenges and opportunities</h3>
+  
+      <p>The paper <a href="http://www.semantic-web-journal.net/content/role-knowledge-graphs-explainable-ai-0" target="_blank" rel="noopener noreferrer">"On The
+          Role of Knowledge Graphs in Explainable AI"</a> by F. Leccue reviews explainable AI (XAI) and presents
+        limitations and opportunities for Knowledge Graphs and their underlying technologies within different fields of
+        AI. Below we present the identified opportunites described in the paper
+        for each of these fields:</p>
+  
+      <ul>
+        <li><b>Machine Learning (ML):</b> "Knowledge Graphs do encode con-texts, do expose connections and relations, and
+          support inference and causation natively. Existing XAI approaches in ML consider a flat representation of data,
+          and context is out of the loop of the explanation process. Knowledge Graphs could be used for encoding better
+          representations of data, structuring an ML model in a more interpretable way, adopt semantic similarity for
+          local explanation."</li>
+        <li><b>Artificial (Deep) Neural Networks:</b> "Novel Artificial Neural Network (ANN) architectures need to be
+          designed to natively encode explanation. Some recent approaches which aim at capturing better model
+          hierarchical relationships, or causality mechanism are promising. However, they could be polished
+          further by (i) adding logic representation layers in ANN, such as using network dissection approaches, (ii)
+          encoding the semantics of inputs, outputs and their properties. Knowledge Graphs could play a central role in
+          such a new design, particularly as novel architectures should embed causation and feature
+          reasoning."</li>
+        <li><b>Computer Vision:</b> "Adding semantics through context andKnowledge Graphs could help answering open
+          questions, such as: What is a disentangled representation,and how can its factors be quantified and detected?
+          Do interpretable hidden units reflect a special alignment offeature space, or are interpretations a chimera?
+          (...) What conditions in state-of-the-art training lead to representations with greater or lesser entanglement?
+          What is the semantics of a groupof hidden units in neural networks?"</li>
+        <li><b>Constraint Satisfaction and Search:</b> "It has been demonstrated that anystructure in problem
+          representation has largely benefited search. We could envision more knowledge-driven structure, inspired
+          from Knowledge Graphs, which could dynamically adapt to variables, constraints, search space. Knowledge Graphs
+          could evendrive search through semantic and logical relations among constraints, which could be modelled as
+          entities in a graph."</li>
+        <li><b>Game Theory:</b> "As recently explored, structured representation of the models as its features has
+          shown better scalability, while not necessarily improving explainability. Knowledge Graphs could be considered
+          to better structure models, organize features, then reducing the search space and potentially improve
+          understanding and readability of explanation, particularly when embedded in a structured set of connected
+          entities."</li>
+        <li><b>Uncertainty in AI:</b> "Semantic representations and connections through Knowledge Graphs could be used to
+          disambiguate and force latent variables to represent interpretable content."</li>
+        <li><b>Robotics:</b> "The level of abstraction in explanation together with its multi-modal fusion are net
+          opportunities for Knowledge Graphs. Some semantics could deeply support in exposing appropriate and
+          personalized representations of explanations while fusing explanation content in a compact and
+          comprehensible representation."</li>
+        <li><b>Distributed AI:</b> "The dynamics of agents interaction should be captured more formally, and embedded
+          with broader common sense knowledge to identify human interpretable explanation."</li>
+        <li><b>Automatic Planning and Scheduling:</b> "Knowledge Graphs could be a way forward to better contextualize
+          complex terms, and even better summarize complex actions in more succinct and meaningful way."</li>
+        <li><b>Natural Language Processing (NLP):</b> "Semantic descriptions, exposing meaningful representations, have
+          demonstrated to have apositive impact on tasks such as relation extraction, event extraction or
+          text classification. Similar representations, inspired from Knowledge Graphs could provide the semantic
+          layer missing from brute-force machine learning approaches ontext, aiming at exposing explanation."</li>
+      </ul>
+  
+      <h3>Available toolkits</h3>
+  
+      <table border="1">
+        <tr>
+          <th style="text-align:left">Tool</th>
+          <th width="30%" style="text-align:left">Description</th>
+          <th style="text-align:left">Graph model</th>
+          <th style="text-align:left">Supported programming languages</th>
+          <th style="text-align:left">Technology dependencies</th>
+          <th style="text-align:left">License</th>
+          <th style="text-align:left">Latest release year</th>
+        </tr>
+        <tr>
+          <td><a href="https://pypi.org/project/rdfframes/" target="_blank" rel="noopener noreferrer">RDFframes</a></td>
+          <td>A Python library that enables data scientists to extract data from knowledge graphs encoded in RDF into
+            familiar tabular formats using familiar procedural Python abstractions. RDFframes provides an easy-to-use,
+            efficient, and scalable API for users who are familiar with the PyData (Python for Data) ecosystem but are not
+            experts in SPARQL.</td>
+          <td>RDF graph</td>
+          <td>
+            <ul>
+              <li>Python</li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li>RDF store</li>
+              <li>SPARQL endpoint</li>
+            </ul>
+          </td>
+          <td>MIT License (MIT)</td>
+          <td>2020</td>
+        </tr>
+        <tr>
+          <td><a href="https://rdflib.readthedocs.io/en/stable/" target="_blank" rel="noopener noreferrer">rdflib</a></td>
+          <td>RDFLib is a pure Python package for working with RDF. RDFLib contains useful APIs for working with RDF.</td>
+          <td>RDF graph</td>
+          <td>
+            <ul>
+              <li>Python</li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li>RDF store</li>
+              <li>SPARQL endpoint</li>
+            </ul>
+          </td>
+          <td><a href="https://github.com/RDFLib/rdflib/blob/master/LICENSE" target="_blank" rel="noopener noreferrer">Properitary, open source</a></td>
+          <td>2020</td>
+        </tr>
+        <tr>
+          <td><a href="http://tinkerpop.apache.org/" target="_blank" rel="noopener noreferrer">Apache TinkerPop</a></td>
+          <td>Apache TinkerPop is a graph computing framework for both graph databases (OLTP) and graph analytic systems
+            (OLAP).</td>
+          <td>Property graph</td>
+          <td>
+            <ul>
+              <li>Java</li>
+            </ul>
+          </td>
+          <td></td>
+          <td>Apache License 2.0</td>
+          <td>2021</td>
+        </tr>
+        <tr>
+          <td><a href="https://pypi.org/project/rdf2gremlin/" target="_blank" rel="noopener noreferrer">rdf2gremlin</a></td>
+          <td>Apache TinkerPop is a graph computing framework for both graph databases (OLTP) and graph analytic systems
+            (OLAP). Gremlin is the graph traversal language of TinkerPop.</td>
+          <td>RDF graph, property graph</td>
+          <td>
+            <ul>
+              <li>Python</li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li>Apache TinkerPop</li>
+            </ul>
+          </td>
+          <td>GPL3</td>
+          <td>2021</td>
+        </tr>
+        <tr>
+          <td><a href="https://spark.apache.org/graphx/" target="_blank" rel="noopener noreferrer">Apache Spark GraphX</a></td>
+          <td>GraphX unifies ETL, exploratory analysis, and iterative graph computation within a single system. GraphX
+            comes with a variety of graph algorithms.</td>
+          <td>Property graph</td>
+          <td>
+            <ul>
+              <li>Scala</li>
+            </ul>
+          </td>
+          <td></td>
+          <td>Apache License 2.0</td>
+          <td>2021</td>
+        </tr>
+        <tr>
+          <td><a href="https://github.com/graphframes/graphframes" target="_blank" rel="noopener noreferrer">GraphFrames</a>
+          </td>
+          <td>GraphFrames is a package for Apache Spark which provides DataFrame-based Graphs. It provides high-level APIs
+            in Scala, Java, and Python. It aims to provide both the functionality of GraphX and extended functionality
+            taking advantage of Spark DataFrames. This extended functionality includes motif finding, DataFrame-based
+            serialization, and highly expressive graph queries.</td>
+          <td>DataFrame-based graph</td>
+          <td>
+            <ul>
+              <li>Scala</li>
+              <li>Java</li>
+              <li>Python</li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li>Apache Spark 2.4+</li>
+            </ul>
+          </td>
+          <td>Apache License 2.0</td>
+          <td>2020</td>
+        </tr>
+        <tr>
+          <td><a href="https://neo4j.com/product/graph-data-science-library/" target="_blank" rel="noopener noreferrer">Neo4j Graph Data Science Library</a></td>
+          <td>The Neo4j Graph Data Science Library is the analytics engine. Graph algorithms provide unsupervised machine
+            learning methods and heuristics that learn and describe the
+            topology of your graph. The GDS Library includes hardened graph algorithms with enterprise features, like
+            deterministic seeding for consistent results. And with graph embeddings and trained models inside of the
+            analytics workspace, you can make predictions about your graph from within Neo4j.</td>
+          <td>Property graph</td>
+          <td>
+            <ul>
+              <li>Java</li>
+              <li>Python</li>
+          </ul>
+          </td>
+          <td>
+            <ul>
+              <li>Neo4j</li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li><a href="https://github.com/neo4j/graph-data-science" target="_blank" rel="noopener noreferrer">Community Edition</a> released under GPL3</li>
+              <li>Enterprise Edition is licensed separately</li>
+            </ul>
+          </td>
+          <td>2021</td>
+        </tr>
+        <tr>
+          <td><a href="https://github.com/neo4j-labs/neosemantics" target="_blank" rel="noopener noreferrer">neosemantics (n10s)</a></td>
+          <td>neosemantics is a plugin that enables the use of RDF in Neo4j.</td>
+          <td>RDF graph</td>
+          <td>
+            <ul>
+              <li>Java</li>
+              <li>Python</li>
+          </ul>
+          </td>
+          <td>
+            <ul>
+              <li>Neo4j</li>
+            </ul>
+          </td>
+          <td>Apache License 2.0</td>
+          <td>2021</td>
+        </tr>
+      </table>
+  
+    </td>
+  </table>
+
+
+    <p></p>
+
+</body>
+
+</html>

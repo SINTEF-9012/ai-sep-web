@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h3>Microsoft Team Data Science Process (TDSP)</h3>
+
+    <p>The Team Data Science Process (TDSP) is an agile, iterative data science methodology to deliver predictive
+      analytics solutions and intelligent applications efficiently.</p>
+
+    <h3>Key concepts</h3>
+
+    <p>TDSP has the following key components:</p>
+
+    <ul>
+      <li>A data science lifecycle definition</li>
+      <li>A standardized project structure</li>
+      <li>Infrastructure and resources recommended for data science projects</li>
+      <li>Tools and utilities recommended for project execution</li>
+    </ul>
+
+    <h3>Data science lifecycle</h3>
+
+    <p>TDSP provides a lifecycle to structure the development of your data science projects. This lifecycle has been
+      designed for data science projects that ship as part of intelligent applications. These applications deploy
+      machine learning or artificial intelligence models for predictive analytics. The lifecycle outlines the major
+      stages that projects typically execute, often iteratively:</p>
+
+    <table>
+      <td style="vertical-align:top">
+        <img src="assets/img/tdsp_lifecycle.png" height="500" style="padding-bottom: 30px; padding-right: 30px;">
+      </td>
+      <p></p>
+      <p></p>
+      <td style="vertical-align:top">
+        <ul>
+          <li><b>Business Understanding</b></li>
+          <ul>
+            <li>Specify the key variables that are to serve as the model targets and whose related metrics are used
+              determine the success of the project.
+            </li>
+            <li>Identify the relevant data sources that the business has access to or needs to obtain.</li>
+          </ul>
+          <li><b>Data Acquisition and Understanding</b></li>
+          <ul>
+            <li>Produce a clean, high-quality data set whose relationship to the target variables is understood. Locate
+              the data set in the appropriate analytics environment so you are ready to model.</li>
+            <li>Develop a solution architecture of the data pipeline that refreshes and scores the data regularly.</li>
+          </ul>
+          <li><b>Modeling</b></li>
+          <ul>
+            <li>Determine the optimal data features for the machine-learning model.</li>
+            <li>Create an informative machine-learning model that predicts the target most accurately.</li>
+            <li>Create a machine-learning model that's suitable for production.</li>
+          </ul>
+          <li><b>Deployment</b></li>
+          <ul>
+            <li>Deploy models with a data pipeline to a production or production-like environment for final user
+              acceptance.</li>
+          </ul>
+          <li><b>Customer Acceptance</b></li>
+          <ul>
+            <li>Finalize project deliverables. Confirm that the pipeline, the model, and their deployment in a
+              production environment satisfy the customer's objectives.</li>
+          </ul>
+        </ul>
+      </td>
+    </table>
+
+    <h3>Team roles</h3>
+
+    <p>TDSP defines four key roles and associated tasks for a data science team standardizing on this process:</p>
+
+    <ul>
+      <li><b>Group Manager:</b> Manages the entire data science unit in an enterprise. A data science unit might have
+        multiple teams, each of which is working on multiple data science projects in distinct business verticals. A
+        Group Manager might delegate their tasks to a surrogate, but the tasks associated with the role do not change.
+      </li>
+      <li><b>Team Lead:</b> Manages a team in the data science unit of an enterprise. A team consists of multiple data
+        scientists. For a small data science unit, the Group Manager and the Team Lead might be the same person.</li>
+      <li><b>Project lead:</b> Manages the daily activities of individual data scientists on a specific data science
+        project.</li>
+      <li><b>Project Individual Contributors:</b> Data Scientists, Business Analysts, Data Engineers, Architects, and
+        others who execute a data science project.</li>
+    </ul>
+
+    <h3>Pros & cons</h3>
+
+    <table style="width:100%" border="1">
+      <tr>
+        <th style="text-align:middle">Pros</th>
+        <th style="text-align:middle">Cons</th>
+      </tr>
+      <tr>
+        <td style="vertical-align:top">
+          <ul>
+            <li><b>Agile:</b> Emphasizes the need for incremental deliverables.</li>
+            <li><b>Tailored for data science:</b> Built for data science teams working on production-bound projects.
+            </li>
+            <li><b>Thourough and product-level quality:</b> Mature project management approach for data science teams
+              that covers both aspects of agile and life cycle of CRISP-PM.</li>
+            <li><b>Tool support:</b> Extensive tool support on Azure and project templates on GitHub.</li>
+          </ul>
+        </td>
+        <td style="vertical-align:top">
+          <ul>
+            <li><b>Azure platform-dependent:</b> While the process is platform-agnostic, much of the available resources
+              are linked to the Microsoft Azure platform.</li>
+            <li><b>Production level maturity:</b> Geared towards delivering production-level quality. May not be
+              suitable for smaller data science teams and/or small experiments.</li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+
+    <h3>Tool support</h3>
+
+    <ul>
+      <li><a href="https://docs.microsoft.com/en-us/azure/machine-learning/" target="_blank" rel="noopener noreferrer">Azure Machine Learning</a></li>
+      <li><a href="https://github.com/Azure/Azure-TDSP-ProjectTemplate" target="_blank" rel="noopener noreferrer">Project templates</a></li>
+    </ul>
+
+    <h3>References</h3>
+
+    <ul>
+      <li><a href="https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/" target="_blank" rel="noopener noreferrer">Team Data Science
+          Process</a>
+      <li><a href="https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/overview" target="_blank" rel="noopener noreferrer">What is
+          the Team Data Science Process?</a></li>
+    </ul>
+
+    <p></p>
+
+</body>
+
+</html>

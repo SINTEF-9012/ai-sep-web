@@ -1,0 +1,14 @@
+{
+            "method": {
+                "title": "Enhance Fairness of Model",
+                "definition": "Because machine learning systems are increasingly adopted in real life applications, any inequities or discrimination that are promoted by those systems have the potential to directly affect human lives. Machine Learning Fairness is a sub-domain of machine learning interpretability that focuses solely on the social and ethical impact of machine learning algorithms by evaluating them in terms impartiality and discrimination."
+                },
+            "localOrGlobal": {
+                "title": "Local vs Global",
+                "definition": "If the method provides an explanation only for a specific instance, then it is a local one and, if the method explains the whole model, then it is global."
+                },
+            "modelSpecificOrAgnostic": {
+                "title": "Model Specific vs Agnostic",
+                "definition": "A model specific method can be applied to a single model or a group of specific models. On the other hand, a model agnostic method can be applied to any model."
+                }
+}

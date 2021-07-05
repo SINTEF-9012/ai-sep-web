@@ -1,0 +1,87 @@
+html {
+    font-size: 16px;
+}
+
+th, td {
+    text-align: center;
+    font-size: 0.9em;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%; /* full window width */
+    text-align: center;
+}
+
+/* p-table th {
+    text-align: center;
+} */
+
+.content-container {
+    width: 100%; /* full window width */
+}
+
+.content-container-def {
+    width: 100%; /* full window width */
+    padding-bottom: 10px;
+}
+
+.datagrid-compact {
+    width: 95%;
+}
+
+.card {
+    width: 95%;
+}
+
+.listitem {
+    padding-bottom: 10px;
+}
+
+.btn-group {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+h1 {
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+p {
+    padding-left: 10px;
+    padding-right: 240px;
+}
+
+.offline {
+    font-weight: 700;
+    color: #ff5252;
+}
+
+.online {
+    text-align: center;
+    font-weight: 700;
+    color: black;
+    background-color: lightgreen;
+}
+
+.navbar {
+    padding-left: 15px;
+}
+
+h4 {
+    padding-left: 5px;
+}
+
+h3 {
+    padding-left: 5px;
+}
+
+.clr-vertical-nav {
+    height: 100%;
+}
+
+.icon {
+    margin-top: 10px;
+}

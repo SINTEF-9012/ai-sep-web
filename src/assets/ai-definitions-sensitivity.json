@@ -1,0 +1,14 @@
+{
+            "method": {
+                "title": "Test Sensitivity of Predictions",
+                "definition": "This category includes interpretability methods that attempt to assess and challenge the machine learning models in order to ensure that their predictions are trustworthy and reliable. These methods apply some form of sensitivity analysis, as models are tested with respect to the stability of their learnt functions and how sensitive their output predictions are with respect to subtle yet intentional changes in the corresponding inputs."
+                },
+            "localOrGlobal": {
+                "title": "Local vs Global",
+                "definition": "If the method provides an explanation only for a specific instance, then it is a local one and, if the method explains the whole model, then it is global."
+                },
+            "modelSpecificOrAgnostic": {
+                "title": "Model Specific vs Agnostic",
+                "definition": "A model specific method can be applied to a single model or a group of specific models. On the other hand, a model agnostic method can be applied to any model."
+                }
+}

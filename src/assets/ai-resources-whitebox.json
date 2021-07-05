@@ -1,0 +1,197 @@
+[
+    {
+        "resource": "InterpretML",
+        "id": 1,
+        "citationsPerYear": 130,
+        "year": 2015,
+        "description": "Text",
+        "paperTitle": "Intelligible Models for HealthCare: Predicting Pneumonia Risk and Hospital 30-day Readmission",
+        "paperAbstract": "We present two case studies where high-performance generalized additive models with pairwise interactions (GA2Ms) are applied to real healthcare problems yielding intelligible models with state-of-the-art accuracy. In the pneumonia risk prediction case study, the intelligible model uncovers surprising patterns in the data that previously had prevented complex learned models from being fielded in this domain, but because it is intelligible and modular allows these patterns to be recognized and removed. In the 30-day hospital readmission case study, we show that the same methods scale to large datasets containing hundreds of thousands of patients and thousands of attributes while remaining intelligible and providing accuracy comparable to the best (unintelligible) machine learning methods.",
+        "reference": "Caruana, R.; Lou, Y.; Gehrke, J.; Koch, P.; Sturm, M.; Elhadad, N. Intelligible models for healthcare: Predicting pneumonia risk and hospital 30-day readmission. In Proceedings of the 21th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, Sydney, Australia, 10–13 August 2015; pp. 1721–1730.",
+        "resourceType": {
+            "paper": false,
+            "tool": true,
+            "method": false
+        },
+        "sourceURL": "https://dl.acm.org/doi/10.1145/2783258.2788613",
+        "repositoryUrl": "https://github.com/interpretml/interpret",
+        "localOrGlobal": {
+            "local": false,
+            "global": true
+        },
+        "dataTypes": {
+            "tabular": true,
+            "text": false,
+            "image": false,
+            "graph": false
+        },
+        "purposeOfInterpretability": {
+            "intrinsic": true,
+            "postHoc": false,
+            "enhanceFairness": false,
+            "testSensitivityOfPredictions": false
+        },
+        "modelSpecificOrAgnostic": {
+            "specific": true,
+            "agnostic": false,
+            "enhanceFairness": false,
+            "testSensitivityOfPredictions": false
+        }
+    },
+    {
+        "resource": "Slim",
+        "id": 1,
+        "citationsPerYear": 35,
+        "year": 2016,
+        "description": "Text",
+        "paperTitle": "Supersparse Linear Integer Models for Optimized Medical Scoring Systems",
+        "paperAbstract": "Scoring systems are linear classification models that only require users to add, subtract and multiply a few small numbers in order to make a prediction. These models are in widespread use by the medical community, but are difficult to learn from data because they need to be accurate and sparse, have coprime integer coefficients, and satisfy multiple operational constraints. We present a new method for creating data-driven scoring systems called a Supersparse Linear Integer Model (SLIM). SLIM scoring systems are built by solving an integer program that directly encodes measures of accuracy (the 0-1 loss) and sparsity (the ℓ0-seminorm) while restricting coefficients to coprime integers. SLIM can seamlessly incorporate a wide range of operational constraints related to accuracy and sparsity, and can produce highly tailored models without parameter tuning. We provide bounds on the testing and training accuracy of SLIM scoring systems, and present a new data reduction technique that can improve scalability by eliminating a portion of the training data beforehand. Our paper includes results from a collaboration with the Massachusetts General Hospital Sleep Laboratory, where SLIM was used to create a highly tailored scoring system for sleep apnea screening",
+        "reference": "Ustun, B.; Rudin, C. Supersparse linear integer models for optimized medical scoring systems. Mach. Learn. 2016, 102, 349–391.",
+        "resourceType": {
+            "paper": false,
+            "tool": true,
+            "method": false
+        },
+        "sourceURL": "https://arxiv.org/abs/1502.04269",
+        "repositoryUrl": "https://github.com/ustunb/slim-python",
+        "localOrGlobal": {
+            "local": false,
+            "global": true
+        },
+        "dataTypes": {
+            "tabular": true,
+            "text": false,
+            "image": false,
+            "graph": false
+        },
+        "purposeOfInterpretability": {
+            "intrinsic": true,
+            "postHoc": false,
+            "enhanceFairness": false,
+            "testSensitivityOfPredictions": false
+        },
+        "modelSpecificOrAgnostic": {
+            "specific": true,
+            "agnostic": false,
+            "enhanceFairness": false,
+            "testSensitivityOfPredictions": false
+        }
+    },
+    {
+        "resource": "AIX360",
+        "id": 1,
+        "citationsPerYear": 12,
+        "year": 2018,
+        "description": "Text",
+        "paperTitle": "Boolean Decision Rules via Column Generation",
+        "paperAbstract": "his paper considers the learning of Boolean rules in either disjunctive normal form (DNF, OR-of-ANDs, equivalent to decision rule sets) or conjunctive normal form (CNF, AND-of-ORs) as an interpretable model for classification. An integer program is formulated to optimally trade classification accuracy for rule simplicity. Column generation (CG) is used to efficiently search over an exponential number of candidate clauses (conjunctions or disjunctions) without the need for heuristic rule mining. This approach also bounds the gap between the selected rule set and the best possible rule set on the training data. To handle large datasets, we propose an approximate CG algorithm using randomization. Compared to three recently proposed alternatives, the CG algorithm dominates the accuracy-simplicity trade-off in 8 out of 16 datasets. When maximized for accuracy, CG is competitive with rule learners designed for this purpose, sometimes finding significantly simpler solutions that are no less accurate.",
+        "reference": "Dash, S.; Gunluk, O.;Wei, D. Boolean decision rules via column generation. In Proceedings of the Advances in Neural Information Processing Systems, Montréal, QC, Canada, 3–8 December 2018; pp. 4655–4665.",
+        "resourceType": {
+            "paper": false,
+            "tool": true,
+            "method": false
+        },
+        "sourceURL": "https://papers.nips.cc/paper/2018/hash/743394beff4b1282ba735e5e3723ed74-Abstract.html",
+        "repositoryUrl": "https://github.com/Trusted-AI/AIX360",
+        "localOrGlobal": {
+            "local": false,
+            "global": true
+        },
+        "dataTypes": {
+            "tabular": true,
+            "text": false,
+            "image": false,
+            "graph": false
+        },
+        "purposeOfInterpretability": {
+            "intrinsic": true,
+            "postHoc": false,
+            "enhanceFairness": false,
+            "testSensitivityOfPredictions": false
+        },
+        "modelSpecificOrAgnostic": {
+            "specific": true,
+            "agnostic": false,
+            "enhanceFairness": false,
+            "testSensitivityOfPredictions": false
+        }
+    },
+    {
+        "resource": "AIX360",
+        "id": 1,
+        "citationsPerYear": 12,
+        "year": 2019,
+        "description": "Text",
+        "paperTitle": "TED: Teaching AI to Explain its Decisions",
+        "paperAbstract": "Artificial intelligence systems are being increasingly deployed due to their potential to increase the efficiency, scale, consistency, fairness, and accuracy of decisions. However, as many of these systems are opaque in their operation, there is a growing demand for such systems to provide explanations for their decisions. Conventional approaches to this problem attempt to expose or discover the inner workings of a machine learning model with the hope that the resulting explanations will be meaningful to the consumer. In contrast, this paper suggests a new approach to this problem. It introduces a simple, practical framework, called Teaching Explanations for Decisions (TED), that provides meaningful explanations that match the mental model of the consumer. We illustrate the generality and effectiveness of this approach with two different examples, resulting in highly accurate explanations with no loss of prediction accuracy for these two examples.",
+        "reference": "Hind, M.; Wei, D.; Campbell, M.; Codella, N.C.; Dhurandhar, A.; Mojsilovi´c, A.; Natesan Ramamurthy, K.; Varshney, K.R. TED: Teaching AI to explain its decisions. In Proceedings of the 2019 AAAI/ACM Conference on AI, Ethics, and Society, Honolulu, HI, USA, 27–28 January 2019; pp. 123–129.",
+        "resourceType": {
+            "paper": false,
+            "tool": true,
+            "method": false
+        },
+        "sourceURL": "https://arxiv.org/abs/1811.04896",
+        "repositoryUrl": "https://github.com/Trusted-AI/AIX360",
+        "localOrGlobal": {
+            "local": true,
+            "global": false
+        },
+        "dataTypes": {
+            "tabular": true,
+            "text": false,
+            "image": false,
+            "graph": false
+        },
+        "purposeOfInterpretability": {
+            "intrinsic": true,
+            "postHoc": false,
+            "enhanceFairness": false,
+            "testSensitivityOfPredictions": false
+        },
+        "modelSpecificOrAgnostic": {
+            "specific": true,
+            "agnostic": false,
+            "enhanceFairness": false,
+            "testSensitivityOfPredictions": false
+        }
+    },
+    {
+        "resource": "AIX360",
+        "id": 1,
+        "citationsPerYear": 5,
+        "year": 2019,
+        "description": "Text",
+        "paperTitle": "Generalized Linear Rule Models",
+        "paperAbstract": "This paper considers generalized linear models using rule-based features, also referred to as rule ensembles, for regression and probabilistic classification. Rules facilitate model interpretation while also capturing nonlinear dependences and interactions. Our problem formulation accordingly trades off rule set complexity and prediction accuracy. Column generation is used to optimize over an exponentially large space of rules without pre-generating a large subset of candidates or greedily boosting rules one by one. The column generation subproblem is solved using either integer programming or a heuristic optimizing the same objective. In experiments involving logistic and linear regression, the proposed methods obtain better accuracy-complexity trade-offs than existing rule ensemble algorithms. At one end of the trade-off, the methods are competitive with less interpretable benchmark models.",
+        "reference": "Wei, D.; Dash, S.; Gao, T.; Gunluk, O. Generalized Linear Rule Models. In Proceedings of the 36th International Conference on Machine Learning, Long Beach, CA, USA, 9–15 June 2019; Volume 97, pp. 6687–6696.",
+        "resourceType": {
+            "paper": false,
+            "tool": true,
+            "method": false
+        },
+        "sourceURL": "https://arxiv.org/abs/1906.01761",
+        "repositoryUrl": "https://github.com/Trusted-AI/AIX360",
+        "localOrGlobal": {
+            "local": false,
+            "global": true
+        },
+        "dataTypes": {
+            "tabular": true,
+            "text": false,
+            "image": false,
+            "graph": false
+        },
+        "purposeOfInterpretability": {
+            "intrinsic": true,
+            "postHoc": false,
+            "enhanceFairness": false,
+            "testSensitivityOfPredictions": false
+        },
+        "modelSpecificOrAgnostic": {
+            "specific": true,
+            "agnostic": false,
+            "enhanceFairness": false,
+            "testSensitivityOfPredictions": false
+        }
+    }
+]

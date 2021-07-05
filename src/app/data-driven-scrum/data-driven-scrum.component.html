@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h3>Data Driven Scrum (DDS)</h3>
+
+    <p>Data Driven Scrum (DDS) was designed with data science in mind. Specifically, DDS supports lean iterative
+      exploratory data science analysis, while acknowledging that iterations will vary in length due to the phase of the
+      project (collecting data vs creating a machine learning analysis).</p>
+
+    <h3>Key concepts</h3>
+
+    <p>Data Driven Scrum (DDS) counters the main problem with fixed-time sprints by removing some stuff from Scrum:</p>
+
+    <ul>
+      <li><b>Agile is iterative experimentation:</b> Agile is intended to be a sequence of iterative experimentations
+        and adaption cycles.</li>
+      <li><b>Iterations are capability based:</b> Iterations are variable-length, capacity-focused, and they can
+        overlap. Backlog item selection occurs in a more continuous manner.</li>
+      <li><b>Focus on create, observe, analyze:</b> Instead of delivering potentially shippable backlog items, the
+        iterations focus on data science native
+        concepts (e.g. experiments, questions to be answered). Each of these items are broken down into tasks to create,
+        observe, and analyze.</li>
+    </ul>
+
+    <h3>Artefacts</h3>
+
+    <img src="assets/img/dds_backlog.png" style="padding-bottom: 20px;">
+
+    <p>The Item Backlog is a prioritized list of BItems (i.e., work to be done). The Item Breakdown Board (IBB) is the
+      place where each Item (in the item backlog) is broken down into tasks, with at least one create task, one observe
+      task and one analyze task for each item. Items on the product backlog are broken down to into their component
+      tasks prior to being worked on by the team, and each item has its own IBB. The Task Board is a visual
+      representation of the work items currently in progress. For work on an item to be started (i.e., being worked on
+      by the team), the tasks for that item are moved from the IBB to the Task Board and are displayed on the board,
+      typically in the ‘to do’ column (items not yet started are on the item backlog). The task board has several
+      columns (at a minimum, ‘to do’, ‘in progress’, ‘done’) and each task flows across the board, thus visually showing
+      work being done within the team. As with Kanban, to facilitate task throughput, each team defines a maximum number
+      of tasks within a single column.</p>
+
+    <h3>Best practices</h3>
+
+    <ul>
+      <li><b>Functional iterations:</b> Allow capability-based iterations. There is no one-size-fits-all. Sometimes it
+        makes sense to have a one-day iteration, other times a two-week iteration. The size of the iterations may
+        depends on e.g. how long it takes to acquire/clean data, or how long it takes for an exploratory analysis.</li>
+      <li><b>Flexible estimation:</b> Only require high-level item estimation. Defining an explicit timeline for an
+        exploratory analysis can
+        be difficult, so one should not need to generate accurate detailed task estimations in order to use the
+        framework.</li>
+      <li><b>Collective analysis:</b> The entire team should be involved in creating, observing and then analyzing an
+        hypothesis, analysis or feature.</li>
+      <li><b>Iteration independent meetings:</b> Decouple meetings from an iteration. Retrospectives and review meetings
+        at the end of an iteration are fundamental for learning
+        and planning improvements. But since an iteration could be very short (e.g., one day for a specific exploratory
+        analysis), retrospective and review meetings should be based on a logical time-based
+        window (e.g., a calendar-based frequency the team deems appropriate), not linked to each iteration.</li>
+    </ul>
+
+    <h3>Pros & cons</h3>
+
+    <table style="width:100%" border="1">
+      <tr>
+        <th style="text-align:middle">Pros</th>
+        <th style="text-align:middle">Cons</th>
+      </tr>
+      <tr>
+        <td style="vertical-align:top">
+          <ul>
+            <li><b>Agile is iterative experimentation:</b> Agile is intended to be a sequence of iterative
+              experimentation and adaptation cycles.</li>
+            <li><b>Iterations are capability based:</b> Teams work iteratively on a given set of items until they are
+              done (no inflexible deadlines).</li>
+            <li><b>Focus on create, observe, analyze:</b> Each iteration always follows three core steps: Create
+              something, observe its performance, and analyze the results.</li>
+            <li><b>Easily integrate with Scrum:</b> DDS's interfaces can be seamlessly integrated within a traditional
+              Scrum-based organization.</li>
+            <li><b>Tool support:</b> Many (commercial) tools exists that support Scrum.</li>
+          </ul>
+        </td>
+        <td style="vertical-align:top">
+          <ul>
+            <li><b>Not comprehensive:</b> Lack of life cycle can be a detractor to teams looking for defined steps, like
+              those found in CRISP-DM.</li>
+            <li><b>Tool support:</b>While many (commercial) tools exists that support Scrum, we have not found many that
+              specifically support Data-Driven Scrum (DDS).</li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+
+    <h2>Tool support</h2>
+
+    <ul>
+      <li><a href="https://www.atlassian.com/software/jira/agile" target="_blank" rel="noopener noreferrer">Jira</a></li>
+      <li><a
+          href="https://support.microsoft.com/en-us/office/manage-your-team-scrum-213c8b43-0038-4b7e-8592-2098d60da9f1" target="_blank" rel="noopener noreferrer">Microsoft
+          Teams</a></li>
+    </ul>
+
+    <h2>References</h2>
+
+    <ul>
+      <li><a href="https://datadrivenscrum.com/how-DDS-works/" target="_blank" rel="noopener noreferrer">Data Driven Scrum (DDS) Guide: How it works</a></li>
+      <li><a href="https://datadrivenscrum.com/data-science-example/" target="_blank" rel="noopener noreferrer">DDS example project</a></li>
+    </ul>
+
+    <p></p>
+
+</body>
+
+</html>

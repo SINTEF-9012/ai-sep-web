@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h3>CRISP-DM (CRoss Industry Standard Process for Data Mining)</h3>
+
+    <p>CRISP-DM (CRoss Industry Standard Process for Data Mining). is an open standard process model that describes
+      common approaches used by data mining experts. It is the most widely-used process model for data science projects
+      [<a href="https://ieeexplore.ieee.org/abstract/document/9377813" target="_blank" rel="noopener noreferrer">Saltz et al., 2020</a>]</p>
+
+    <h3>Key concepts</h3>
+
+    <h3>Phases</h3>
+
+    <p>CRISP-DM breaks down the data science project into six phases:</p>
+
+    <table>
+      <td style="vertical-align:top">
+        <img src="assets/img/crisp-dm_phases.png" style="padding-right: 30px; padding-bottom: 30px;">
+      </td>
+      <td style="vertical-align:top">
+        <ul>
+          <li><b>Business Understanding:</b> <i>What does the business need?</i> This initial phase focuses on
+            understanding the project objectives and requirements from a business perspective,
+            then converting this knowledge into a data mining problem definition and a preliminary plan designed to
+            achieve
+            the objectives. </li>
+          <li><b>Data Understanding:</b> <i>What data do we have or need? Is it clean?</i> The data understanding phase
+            starts with initial data collection and proceeds with activities that enable you to
+            become familiar with the data, identify data quality problems, discover first insights into the data, and/or
+            detect
+            interesting subsets to form hypotheses regarding hidden information. </li>
+          <li><b>Data Preparation:</b> <i>How do we organize the data for modeling?</i> The data preparation phase
+            covers all activities needed to construct the final dataset [data that will be fed into the
+            modeling tool(s)] from the initial raw data. Data preparation tasks are likely to be performed multiple
+            times and not
+            in any prescribed order. Tasks include table, record, and attribute selection, as well as transformation and
+            cleaning
+            of data for modeling tools. </li>
+          <li><b>Modeling:</b> <i>What modeling techniques should we apply?</i> In this phase, various modeling
+            techniques are selected and applied, and their parameters are calibrated to optimal
+            values. Typically, there are several techniques for the same data mining problem type. Some techniques have
+            specific
+            requirements on the form of data. Therefore, going back to the data preparation phase is often necessary.
+          </li>
+          <li><b>Evaluation:</b> <i>Which model best meets the business objectives?</i> At this stage in the project,
+            you have built a model (or models) that appears to have high quality from a data analysis
+            perspective. Before proceeding to final deployment of the model, it is important to thoroughly evaluate it
+            and review
+            the steps executed to create it, to be certain the model properly achieves the business objectives. A key
+            objective is
+            to determine if there is some important business issue that has not been sufficiently considered. At the end
+            of this
+            phase, a decision on the use of the data mining results should be reached. </li>
+          <li><b>Deployment:</b> <i>How do stakeholders access the results?</i> Creation of the model is generally not
+            the end of the project. Even if the purpose of the model is to increase knowledge
+            of the data, the knowledge gained will need to be organized and presented in a way that the customer can use
+            it. It
+            often involves applying “live” models within an organization’s decision making processes—for example,
+            real-time
+            personalization of Web pages or repeated scoring of marketing databases.</li>
+        </ul>
+      </td>
+    </table>
+
+    <h3>Tasks and deliverables</h3>
+
+    <p>The figure below presents an outline of the phases accompanied by <b>generic tasks</b> (bold) and <i>outputs</i>
+      (italic). More details about these tasks can be found in the <a
+        href="https://www.the-modeling-agency.com/crisp-dm.pdf" target="_blank" rel="noopener noreferrer">CRISP-DM user guide.</a></p>
+
+    <img src="assets/img/crisp-dm_tasks.png" height="600">
+
+    <h2>Pros & cons</h2>
+
+    <table style="width:100%" border="1">
+      <tr>
+        <th style="text-align:middle">Pros</th>
+        <th style="text-align:middle">Cons</th>
+      </tr>
+      <tr>
+        <td style="vertical-align:top">
+          <ul>
+            <li><b>Applicable to data science projects:</b> While designed for data mining, the CRISP-DM process is
+              applicable to data science (or machine learning) projects as it closely follows the general data science
+              process.</li>
+            <li><b>Recognized:</b> It is one of the most popular frameworks in use today [<a
+                href="https://ieeexplore.ieee.org/abstract/document/9377813" target="_blank" rel="noopener noreferrer">Saltz et al., 2020</a>].</li>
+            <li><b>Flexible:</b> While not considered agile, the CRISP-DM methodology provides a through foundation that
+              can be adopted to incorporate agile practices.</li>
+          </ul>
+        </td>
+        <td style="vertical-align:top">
+          <ul>
+            <li><b>Not agile:</b> Too heavyweight, rigid and documentation heavy. Lacks coordination between teamwork.
+            </li>
+            <li><b>Documentation heavy:</b> Nearly every task has a documentation step. While documentation is important
+              for production-ready systems, too much requirements on
+              on documentation may slow down the team's ability to deliver on iterations.</li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+
+    <h2>References</h2>
+
+    <ul>
+      <li><a href="https://www.the-modeling-agency.com/crisp-dm.pdf" target="_blank" rel="noopener noreferrer">CRISP-DM 1.0 - Step-by-step data mining guide</a>
+      </li>
+      <li><a href="https://en.wikipedia.org/wiki/Cross-industry_standard_process_for_data_mining" target="_blank" rel="noopener noreferrer">Wikipedia</a></li>
+    </ul>
+
+    <p></p>
+
+</body>
+
+</html>
