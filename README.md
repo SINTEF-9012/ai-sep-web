@@ -1,4 +1,4 @@
-# SEP Data Science Website
+# AI SEP: Data Science Website
 
 ## Angular CLI
 
