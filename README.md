@@ -1,5 +1,7 @@
 # AI SEP: Data Science Website
 
+This is the repository for the website [http://datascience.smartdataresearch.ai/](http://datascience.smartdataresearch.ai/)
+
 ## Angular CLI
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
